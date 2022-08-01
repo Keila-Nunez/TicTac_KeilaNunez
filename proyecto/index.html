@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image" href="./multimedia/images/icon.png"/>
+    <link rel="stylesheet" href="../proyecto/css/estilos.css"> 
+   <!--<link rel="stylesheet" href="../proyecto/css/estilos2.css"> --> 
+    <title>TicTac Beauty</title>  
+</head>
+<body class="container__grid">
+    <header class="header"> 
+        <nav class="nav">   
+            <div class="box__caja">
+                <a  href="#"> <img class="box__caja__logo" src="./multimedia/images/logol.png"> </a>
+            </div>
+            <form class="nav__search" action=""> 
+                <input class="nav__search__input" type="search" name="sacarturno" placeholder="Sacar tuno por servicio, centro o localidad..."> <!--barra de búsqueda -->
+                <button type="submit" class="nav__search__button"><img src="./multimedia/images/iconocaja.png" alt="Buscar"> <!--ícono de búsqueda -->
+            </form>
+        </nav>
+        <!-- INICIO DE MENU -->
+       <nav class="nav2">
+            <ul class="nav__menu__list"> 
+                <li class="nav__menu__itemlink"><a href="./pages/historial.html">Historial</a></li>  
+                <li class="nav__menu__itemlink"><a href="./pages/favoritos.html">Favoritos</a></li> 
+                <li class="nav__menu__itemlink"><a href="./pages/recomendaciones.html">Recomendaciones</a></li>
+                <li class="nav__menu__itemlink"><a href="">Calendario</a>
+                <ul class="nav__menu__calendar"> 
+                    <li class="nav__menu__calendar__1">   
+                        <table class="contenedor"> 
+                            <thead class="contenedor__encabezado">
+                                <caption class="contenedor__titulo"><h3>Julio 2022</h3></caption>
+                                    <tr class="contenedor__days">
+                                        <td class="contenedor__day">DO</td> 
+                                        <td class="contenedor__day">LU</td> 
+                                        <td class="contenedor__day">MA</td> 
+                                        <td class="contenedor__day">MI</td> 
+                                        <td class="contenedor__day">JU</td> 
+                                        <td class="contenedor__day">VI</td> 
+                                        <td class="contenedor__day">SA</td>
+                                    </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="contenedor__days">
+                                    <td></td><td><td><td><td></td></td></td></td><td>1</td><td>2</td>
+                                </tr>
+                                <tr class="contenedor__days">
+                                    <td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td>
+                                </tr>
+                                <tr class="contenedor__days">
+                                    <td>10</td><td>11</td><td>12</td><td>13</td><td>14</td><td>15</td><td>16</td>
+                                </tr>
+                                <tr class="contenedor__days">
+                                    <td>17</td><td>18</td><td>19</td><td>20</td><td>21</td><td>22</td><td>23</td>
+                                </tr>
+                                <tr class="contenedor__days">
+                                    <td>24</td><td>25</td><td>26</td><td>27</td><td>28</td><td>29</td><td>30</td>
+                                </tr>
+                                <tr class="contenedor__days">
+                                    <td>31</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </li>
+                </ul>
+                <li class="nav__menu__item"><a href="">Perfil</a> 
+                    <ul class="nav__menu__sublist"> 
+                        <li class="nav__menu__sublist__itemlink">Hola Luna</li>
+                        <li class="nav__menu__sublist__itemlink"><a href="./pages/datospersonales.html">Datos personales</a></li> 
+                        <li class="nav__menu__sublist__itemlink"><a href="./pages/iniciarsesion.html">Salir</a></li>
+                    </ul> 
+                </li>
+                <li class="nav__menu__item"><a href="">Notificaciones</a>
+                    <ul class="nav__menu2__sublist" > 
+                        <li class="nav__menu2__sublist__item">Tienes un turno agendado</li>  
+                        <li class="nav__menu2__sublist__item">Tienes un turno agendado</li>
+                        <li class="nav__menu2__sublist__item">Tienes un turno agendado</li>
+                        <li class="nav__menu2__sublist__item">Tienes un turno agendado</li>
+                    </ul> 
+                </li>
+            </ul>       
+        </nav> 
+        <!-- FIN DE MENU-->
+    </header> 
+    <main>  
+        <!-- INICIO DE SLIDER -->
+        <div class="slider">
+            <ul>
+                <li>
+                    <a href="../proyecto/pages/centro.html"><img class="container__img" src="./multimedia/images/zmcejas.jpeg" width="200px" height="200pz"></a>
+                </li>
+                <li>
+                    <a href="../proyecto/pages/centro.html"><img class="container__img" src="./multimedia/images/definit.jpg" ></a>
+                </li>
+                <li>
+                    <a href="../proyecto/pages/centro.html"><img class="container__img" src="./multimedia/images/depifourever.png"></a> 
+                </li>
+                <li>
+                    <a href="../proyecto/pages/centro.html"><img class="container__img" src="./multimedia/images/beautyface.jpg"></a>
+                </li>
+                <li>
+                    <a href="../proyecto/pages/centro.html"><img class="container__img" src="./multimedia/images/beautyrose.jpg"></a>
+                </li>
+            </ul>
+        </div> 
+        <!-- FIN DE SLAIDER -->
+        <div class="box__titulo">
+            <h2 class="titulo">Visto recientemente</h2>
+        </div>
+        <div class="home">
+            <!-- INICIO SECTION 1 -->
+            <section class="section1"> 
+                <div class="section__card">
+                    <a href="../proyecto/pages/centro.html"><img class="section__card__img" src="./multimedia/images/microshading.jpeg"  alt="cejas maquilladas"> </a>
+                    <p class="section__card__servicio">Servicio ofrecido</p>
+                    <span class="section__card__price">$ Precio <img class="favoritos1" src="./multimedia/images/inactivo.png" alt=""></span> 
+                </div>
+                <div class="section__card">
+                    <a class="" href="../proyecto/pages/centro.html"> <img class="section__card__img" src="./multimedia/images/microblading.jpeg"  alt="cejas maquilladas"></a>
+                    <p class="section__card__servicio">Servicio ofrecido</p>
+                    <span class="section__card__price">$ Precio <img class="favoritos1" src="./multimedia/images/inactivo.png" alt=""></span>
+                </div>    
+                <div class="section__card">
+                    <a class="" href="../proyecto/pages/centro.html"> <img class="section__card__img" src="./multimedia/images/liftingdepestanas.jpeg"  alt="pestañas"></a>
+                    <p class="section__card__servicio">Servicio ofrecido</p>
+                    <span class="section__card__price">$ Precio <img class="favoritos1" src="./multimedia/images/inactivo.png" alt=""></span>
+                </div>
+                <div class="section__card">
+                    <a href="../proyecto/pages/centro.html"> <img class="section__card__img" src="./multimedia/images/laminado.jpeg"  alt="pestañas"></a> 
+                    <p class="section__card__servicio">Servicio ofrecido</p>
+                    <span class="section__card__price">$ Precio <img class="favoritos1" src="./multimedia/images/inactivo.png" alt=""></span>
+                </div>
+                <div class="section__card">
+                    <a href="../proyecto/pages/centro.html"> <img class="section__card__img" src="./multimedia/images/laminado.jpeg"  alt="pestañas"></a> 
+                    <p class="section__card__servicio">Servicio ofrecido</p>
+                    <span class="section__card__price">$ Precio <img class="favoritos1" src="./multimedia/images/inactivo.png" alt=""></span>
+                </div>
+            </section>
+            <!-- FIN SECTION 1 -->
+            <!-- INICIO SECTION 2 -->
+            <h2 class="titulo">Inspirado en tus favoritos</h2>
+            <section class="section2" >
+                <div class="section__card">
+                    <a href="../proyecto/pages/centro.html"> <img class="section__card__img" src="./multimedia/images/mascarilla.jpeg"   alt="rostro"></a>
+                    <p class="section__card__servicio">Servicio ofrecido</p>
+                    <span class="section__card__price">$ Precio <img class="favoritos1" src="./multimedia/images/inactivo.png" alt=""></span> 
+                </div>
+                <div class="section__card">
+                    <a href="../proyecto/pages/centro.html"> <img class="section__card__img" src="./multimedia/images/limpiezadecutism.jpeg"  alt="rostro mujer"></a>
+                    <p class="section__card__servicio">Servicio ofrecido</p>
+                    <span class="section__card__price">$ Precio <img class="favoritos1" src="./multimedia/images/inactivo.png" alt=""></span> 
+                </div>
+                <div class="section__card">
+                    <a href="../proyecto/pages/centro.html"> <img class="section__card__img" src="./multimedia/images/limpiezadecutis.jpeg"  alt="rostro hombre"></a>
+                    <p class="section__card__servicio">Servicio ofrecido</p>
+                    <span class="section__card__price">$ Precio <img class="favoritos1" src="./multimedia/images/inactivo.png" alt=""></span> 
+                </div>
+                <div class="section__card">
+                    <a href="../proyecto/pages/centro.html"><img class="section__card__img" src="./multimedia/images/electroporacion.jpeg"  alt="rostro mujer2"></a>  
+                    <p class="section__card__servicio">Servicio ofrecido</p>
+                    <span class="section__card__price">$ Precio <img class="favoritos1" src="./multimedia/images/inactivo.png" alt=""></span>          
+                </div>  
+                <div class="section__card"> 
+                    <a href="../proyecto/pages/centro.html"><img class="section__card__img" src="./multimedia/images/electroporacion.jpeg" alt="rostro mujer2"></a>
+                    <p class="section__card__servicio">Servicio ofrecido</p>
+                    <span class="section__card__price">$ Precio <img class="favoritos1" src="./multimedia/images/inactivo.png" alt=""></span>            
+                </div> 
+            </section>
+            <!-- FIN SECTION 2 -->
+            <!-- INICIO SECTION 3 -->
+            <h2 class="titulo">Basado en tu última reserva</h2>
+            <section class="section3"> 
+                <div class="section__card">
+                    <a href="../proyecto/pages/centro.html"><img class="section__card__img" src="./multimedia/images/zonaparahombres.jpeg"  alt="hombre"></a>
+                    <p class="section__card__servicio">Servicio ofrecido</p>
+                    <span class="section__card__price">$ Precio <img class="favoritos1" src="./multimedia/images/inactivo.png" alt=""></span> 
+                </div>
+                <div class="section__card">
+                    <a href="../proyecto/pages/centro.html"><img class="section__card__img" src="./multimedia/images/piernas.jpeg"  alt="piernas"></a>
+                    <p class="section__card__servicio">Servicio ofrecido</p>
+                    <span class="section__card__price">$ Precio <img class="favoritos1" src="./multimedia/images/inactivo.png" alt=""></span>  
+                </div>
+                <div class="section__card">
+                    <a href="../proyecto/pages/centro.html"><img class="section__card__img" src="./multimedia/images/cavado.jpeg"  alt="cavado"></a>
+                    <p class="section__card__servicio">Servicio ofrecido</p>
+                    <span class="section__card__price">$ Precio <img class="favoritos1" src="./multimedia/images/inactivo.png" alt=""></span> 
+                </div>
+                <div class="section__card">
+                    <a href="../proyecto/pages/centro.html"><img class="section__card__img" src="./multimedia/images/bozo.jpeg"  alt="bozo"></a>
+                    <p class="section__card__servicio">Servicio ofrecido</p>
+                    <span class="section__card__price">$ Precio <img class="favoritos1" src="./multimedia/images/inactivo.png" alt=""></span>       
+                </div>   
+                <div class="section__card">
+                    <a href="../proyecto/pages/centro.html"><img class="section__card__img" src="./multimedia/images/bozo.jpeg"  alt="bozo"></a>
+                    <p class="section__card__servicio">Servicio ofrecido</p>
+                    <span class="section__card__price">$ Precio <img class="favoritos1" src="./multimedia/images/inactivo.png" alt=""></span>     
+                </div>
+            </section>
+            <!-- FIN SECTION 3 -->
+        </div>
+    </main>
+    <!-- INICIO DE FOOTER -->
+    <footer class="footer"> 
+        <p class="footer__p">TicTac Beauty - Todos los derechos reservados</p>
+        <p class="footer__p">Hecho por Keila Núñez</p>
+    </footer>
+    <!-- FIN DE FOOTER -->
+</body>
+</html>
