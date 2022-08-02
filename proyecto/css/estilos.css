@@ -22,6 +22,8 @@
                         "footer";
     grid-template-rows: auto;
     grid-template-columns: auto;
+    font-family: roboto Condensed;
+    background-color: #DFEADC;
 }
 
 body{
@@ -373,6 +375,7 @@ td{
     margin: 8px 8px 8px 8px;
     background-color: white;
     box-shadow: 2px 2px 5px black;
+    transition: height 2s;
 }
 .section__card__img{
     display: flex;
@@ -619,6 +622,9 @@ td{
 }
 .nav__menu__list li ul{
     display: none;   
+}
+.section__card:hover{
+    height: 430px;
 }
 
 /*Aparece lista perfil*/
