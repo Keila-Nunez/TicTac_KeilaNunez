@@ -598,6 +598,16 @@ td{
     /*background-color: darkorchid;*/
 }
 
+/*ANIMACIONES*/
+.nav__menu__list li a:hover{
+    background-color: #DFEADC;
+
+}
+.nav__menu__list li ul{
+    display: none;
+    
+}
+
     
 /*MEDIA QUERIES*/
 /*Tablet*/
