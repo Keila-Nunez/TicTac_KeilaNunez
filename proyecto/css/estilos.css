@@ -279,6 +279,8 @@ td{
   .slider ul{
     display: flex;
     text-align: center;
+    animation: cambio 20s infinite alternate linear ;
+    width: 400%;
   
   }
   
@@ -293,7 +295,20 @@ td{
     height: 37%;
     
   }
-
+  
+  @keyframes cambio {
+      0% {margin-left: 0%;}
+      20% {margin-left: 0%;}
+  
+      25% {margin-left: -100%;}
+      45% {margin-left: -100%;}
+  
+      50% {margin-left: -200%;}
+      70% {margin-left: -200%;}
+  
+      75% {margin-left: -300%;}
+      100% {margin-left: -300%;}
+  }
 
 /*SECTION 1, 2, 3*/
 .titulo, .section__card__titulo{
