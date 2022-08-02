@@ -601,12 +601,26 @@ td{
 /*ANIMACIONES*/
 .nav__menu__list li a:hover{
     background-color: #DFEADC;
-
 }
 .nav__menu__list li ul{
-    display: none;
-    
+    display: none;   
 }
+
+/*Aparece lista perfil*/
+.nav__menu__item:hover > .nav__menu__sublist{
+    display: block;
+}
+
+/*Aparece lista notificaciones*/
+.nav__menu__item:hover > .nav__menu2__sublist{
+    display: block;
+}
+
+/*Aparece calendario*/
+.nav__menu__itemlink:hover > .nav__menu__calendar{
+    display: block;
+}
+
 
     
 /*MEDIA QUERIES*/
