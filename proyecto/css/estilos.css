@@ -705,6 +705,14 @@ td{
     .nav__search__input{
         font-size: 14px; 
     }  
+     
+    .slider img{
+        width: 70%;
+        height: 37%;
+        
+    } 
+
+    
 }
     
 /*MOBILE*/
@@ -767,6 +775,10 @@ td{
         z-index: 1;
         margin-left: 7rem;  
     } 
+    .slider img{
+        width: 90%;
+        height: 57%;   
+    }
 }
     
 
