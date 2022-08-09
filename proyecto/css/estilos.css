@@ -357,6 +357,9 @@ td{
     text-align: center;
     padding-top: 5px;  
 }
+.box__logo{
+    margin-left: 13px;
+}
 
 
 /* caja contenedora olvidaste contraseña, primera vez*/
@@ -476,6 +479,10 @@ td{
     .navbar-toggler{
         position: absolute;
         margin-top: -22%;
+    }
+    .box__logo{
+        width: 15%;
+        margin-left: 5px;
     }
 }
 
