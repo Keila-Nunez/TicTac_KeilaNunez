@@ -21,80 +21,96 @@
                 <button type="submit" class="nav__search__button"><img src="../multimedia/images/iconocaja.png" alt="Buscar"> 
             </form>
         </nav>
-         <!-- INICIO DE MENU -->
-        <nav class="nav2">
-            <ul class="nav__menu__list"> 
-                <li class="nav__menu__itemlink"><a href="./historial.html">Historial</a></li>  
-                <li class="nav__menu__itemlink"><a href="./favoritos.html">Favoritos</a></li> 
-                <li class="nav__menu__itemlink"><a href="./recomendaciones.html">Recomendaciones</a></li>
-                <li class="nav__menu__itemlink"><a href="">Mi calendario</a>
-                    <ul class="nav__menu__calendar"> 
-                        <li class="nav__menu__calendar__1">   
-                            <table class="contenedor"> 
-                                <thead class="contenedor__encabezado">
-                                    <caption class="contenedor__titulo"><h3>Julio 2022</h3></caption>
-                                        <tr class="contenedor__days">
-                                            <td class="contenedor__day">DO</td> 
-                                            <td class="contenedor__day">LU</td> 
-                                            <td class="contenedor__day">MA</td> 
-                                            <td class="contenedor__day">MI</td> 
-                                            <td class="contenedor__day">JU</td> 
-                                            <td class="contenedor__day">VI</td> 
-                                            <td class="contenedor__day">SA</td>
-                                        </tr>
-                                </thead>
-                                <tbody>
-                                    <tr class="contenedor__days">
-                                        <td></td><td><td><td><td></td></td></td></td><td>1</td><td>2</td>
-                                    </tr>
-                                    <tr class="contenedor__days">
-                                        <td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td>
-                                    </tr>
-                                    <tr class="contenedor__days">
-                                        <td>10</td><td>11</td><td>12</td><td>13</td><td>14</td><td>15</td><td>16</td>
-                                    </tr>
-                                    <tr class="contenedor__days">
-                                        <td>17</td><td>18</td><td>19</td><td>20</td><td>21</td><td>22</td><td>23</td>
-                                    </tr>
-                                    <tr class="contenedor__days">
-                                        <td>24</td><td>25</td><td>26</td><td>27</td><td>28</td><td>29</td><td>30</td>
-                                    </tr>
-                                    <tr class="contenedor__days">
-                                        <td>31</td>
-                                    </tr>
-                                </tbody>
-                            </table>
+        <!-- INICIO DE MENU -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-#00C278">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav__menu__list">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/historial.html">Historial</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/favoritos.html">Favoritos</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="../pages/recomendaciones.html">Recomendaciones</a>
+                        </li>
+                        <li class="nav-item nav__menu__itemlink">
+                            <a class="nav-link" href="">Calendario</a>
+                            <ul class="nav__menu__calendar navbar-nav me-auto mb-2 mb-lg-0"> 
+                                <li class="nav__menu__calendar__1">  
+                                    <table class="contenedor"> 
+                                        <thead class="contenedor__encabezado">
+                                            <caption class="contenedor__titulo">Agosto 2022</caption>
+                                                <tr class="contenedor__days">
+                                                    <td class="contenedor__day">DO</td> 
+                                                    <td class="contenedor__day">LU</td> 
+                                                    <td class="contenedor__day">MA</td> 
+                                                    <td class="contenedor__day">MI</td> 
+                                                    <td class="contenedor__day">JU</td> 
+                                                    <td class="contenedor__day">VI</td> 
+                                                    <td class="contenedor__day">SA</td>
+                                                </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr class="contenedor__days">
+                                                <td></td><td></tr><td></td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td>
+                                            </tr>
+                                            <tr class="contenedor__days">
+                                                <td>7</td><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td><td>13</td>
+                                            </tr>
+                                            <tr class="contenedor__days">
+                                                <td>14</td><td>15</td><td>16</td><td>17</td><td>18</td><td>19</td><td>20</td>
+                                            </tr>
+                                            <tr class="contenedor__days">
+                                                <td>21</td><td>22</td><td>23</td><td>24</td><td>25</td><td>26</td><td>27</td>
+                                            </tr>
+                                            <tr class="contenedor__days">
+                                                <td>28</td><td>29</td><td>30</td><td>31</td><td>28</td><td>29</td><td>30</td>
+                                            </tr>
+                                            <tr class="contenedor__days">
+                                                <td>31</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item nav__menu__item">
+                            <a class="nav-link" href="">Perfil</a>
+                            <ul class="nav__menu__sublist navbar-nav me-auto mb-2 mb-lg-0"> 
+                                <li class="nav__menu__sublist__itemlink ">Hola Luna</li>
+                                <li class="nav__menu__sublist__itemlink active"><a href="../pages/datospersonales.html">Datos personales</a></li> 
+                                <li class="nav__menu__sublist__itemlink"><a href="../pages/iniciarsesion.html">Salir</a></li>
+                            </ul> 
+                        </li>
+                        <li class="nav-item nav__menu__item">
+                            <a class="nav-link" href="">Notificaciones</a>
+                            <ul class="nav__menu2__sublist navbar-nav me-auto mb-2 mb-lg-0" > 
+                                <li class="nav__menu2__sublist__item">Tienes un turno agendado</li>  
+                                <li class="nav__menu2__sublist__item">Tienes un turno agendado</li>
+                                <li class="nav__menu2__sublist__item">Tienes un turno agendado</li>
+                                <li class="nav__menu2__sublist__item">Tienes un turno agendado</li>
+                            </ul> 
                         </li>
                     </ul>
-                </li>
-                <li class="nav__menu__item"><a href="">Perfil</a> 
-                    <ul class="nav__menu__sublist"> 
-                        <li class="nav__menu__sublist__itemlink">Hola Luna</li>
-                        <li class="nav__menu__sublist__itemlink"><a href="./datospersonales.html">Datos personales</a></li> 
-                        <li class="nav__menu__sublist__itemlink"><a href="./iniciarsesion.html">Salir</a></li>
-                    </ul> 
-                </li>
-                <li class="nav__menu__item"><a href="">Notificaciones</a>
-                    <ul class="nav__menu2__sublist" > 
-                        <li class="nav__menu2__sublist__item">Tienes un turno agendado</li> 
-                        <li class="nav__menu2__sublist__item">Tienes un turno agendado</li>
-                        <li class="nav__menu2__sublist__item">Tienes un turno agendado</li>
-                        <li class="nav__menu2__sublist__item">Tienes un turno agendado</li>
-                    </ul> 
-                </li>
-            </ul>       
-        </nav> 
+                </div>
+            </div>
+        </nav>   
         <!-- FIN DE MENU-->
     </header> 
     <main>
         <div class="cuenta"> 
-            <h1 class="titulo">Mi cuenta</h1>
+            <h2 class="titulo">Mi cuenta</h2>
         </div>
-        <table class="tabla"> 
-            <thead class="tabla__contenedor">
-                <caption class="tabla__titulo">Datos personales</caption>
+        <table class="tabla w-75 "> 
+            <thead class="">
+                <h4>Datos personales</h4>
             </thead>
-            <tbody class="tabla__cuerpo">
+            <tbody class="tabla__cuerpo ">
                 <tr class="tabla__fila">
                     <td class="tabla__item">Nombre y apellido</td><td class="tabla__item">Luna Barboza</td>
                 </tr> 
