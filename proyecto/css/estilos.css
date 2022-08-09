@@ -130,6 +130,7 @@ main{
 .nav__menu__calendar{ 
     width: 100%;
 }
+
 td{
     border: 1px solid black; 
     align-items: center;
@@ -230,14 +231,12 @@ td{
     display: flex;
     text-align: center;
     animation: cambio 20s infinite alternate linear ;
-    width: 400%;
-  
+    width: 400%; 
 }
   
 .slider li{
     width: 100%;
-    list-style: none;
-    
+    list-style: none;    
 }
   
 .slider img{
@@ -250,20 +249,19 @@ td{
     height: 300px;
 }
   
-  @keyframes cambio {
-      0% {margin-left: 0%;}
-      20% {margin-left: 0%;}
+@keyframes cambio {
+    0% {margin-left: 0%;}
+    20% {margin-left: 0%;}
   
-      25% {margin-left: -100%;}
-      45% {margin-left: -100%;}
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
   
-      50% {margin-left: -200%;}
-      70% {margin-left: -200%;}
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
   
-      75% {margin-left: -300%;}
-      100% {margin-left: -300%;}
-  }
-
+    75% {margin-left: -300%;}
+    100% {margin-left: -300%;}
+}
 
 .hover:hover {
     border: 1px solid #D28900;
@@ -273,7 +271,6 @@ td{
 .favoritos1{
     margin-left: 130px;
 }
-
 
 /*DATOS PERSONALES*/
 .tabla{
@@ -289,6 +286,7 @@ td{
     box-shadow: 2px 2px 5px black;
     border: 1px solid  #D28900; 
 }
+
 .tabla__fila{
     border: 1px solid  #D28900; 
 }
@@ -337,6 +335,7 @@ td{
     font-family: 'Roboto', sans-serif;
     font-size: 12px;
 }
+
 /* texto ingresar datos de registro*/
 .box__texto__recuperar{
     display: flex;
@@ -403,7 +402,7 @@ td{
     to {
       transform: rotate(359deg);
     }
-  }
+}
 
 
     
@@ -473,6 +472,10 @@ td{
     }
     .favoritos1{
         margin-left: 335px;
+    }
+    .navbar-toggler{
+        position: absolute;
+        margin-top: -22%;
     }
 }
 

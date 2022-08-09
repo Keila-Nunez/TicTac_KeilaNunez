@@ -14,16 +14,22 @@
             <img  class=".box__caja__logo2" src="../multimedia/images/logol.png">
     </header>
     <main>
-        <section class="caja">
-            <form class="box" action="">
-                <div class="box__texto">     
-                    <h1 class="box__texto__bienvenida">¿Olvidaste tu contraseña?</h1> 
-                    <h2 class="box__texto__tictac" >¡No te preocupes! <br> completa tu correo electrónico <br> y te enviaremos un link <br> para elegir una nueva.</h2> 
-                </div>
-                    <input class="box__input__varios" id="mail" name="mail" type="email" placeholder="ejemplo@mail.com" required> <br>
-                    <a href="../index.html"><input class="box__input__button" type="submit" value="Enviar"></a> 
-            </form>
-        </section> 
+        <section class="w-75 mt-5 mb-5 position-relative top-0 start-50 translate-middle">
+            <div class="bg-white border border-white pt-25 rounded-3 ">
+                <form>
+                    <div class="box__texto">     
+                        <h1 class="box__texto__bienvenida">¿Olvidaste tu contraseña?</h1> 
+                        <h2 class="box__texto__tictac" >¡No te preocupes! <br> completa tu correo electrónico y te enviaremos un link <br> para elegir una nueva.</h2> 
+                    </div>
+                    <div class="d-grid gap-2 col-6 mx-auto pt-3 ">
+                        <input type="email" class="form-control border border-warning hover " id="exampleFormControlInput1" placeholder="E-mail">
+                    </div>
+                    <div class="d-grid gap-2 col-6 mx-auto pt-3 pb-5">
+                            <button class="btn btn-primary bg-dark hover" type="button">Button</button>
+                    </div>
+                </form>   
+            </div>
+        </section>
     </main>
     <!-- INICIO DE FOOTER -->
     <footer class="footer"> 
