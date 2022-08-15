@@ -1,0 +1,14 @@
+/*GRID*/
+.container__grid{
+    display: grid;
+    grid-template-areas: "header"
+                        "slider"
+                        "section1"
+                        "section2"
+                        "section3"
+                        "footer";
+    grid-template-rows: auto;
+    grid-template-columns: auto;
+    font-family: $fuente;
+    background-color: $color-acento-inactivo;
+}

@@ -1,0 +1,21 @@
+
+/*FOOTER*/
+.footer{
+    grid-area: footer;
+    background-color: white;
+    box-shadow: $sombra;
+    padding-top: 35px ;
+    padding-bottom: auto;
+    width: 100%;
+    height: 100px;
+    .footer__p{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        margin: auto;
+        font-size: $fuente-tamaño-pequeño;
+    }
+}

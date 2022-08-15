@@ -1,0 +1,395 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto:wght@100;400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  color: black;
+  box-sizing: border-box; }
+
+main {
+  background-color: #DFEADC; }
+
+/*GRID*/
+.container__grid {
+  display: grid;
+  grid-template-areas: "header" "slider" "section1" "section2" "section3" "footer";
+  grid-template-rows: auto;
+  grid-template-columns: auto;
+  font-family: "Roboto Condensed", sans-serif;
+  background-color: #DFEADC; }
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  background-color: #00C278;
+  width: 100%;
+  height: 100%;
+  /*BARRA DE BÚSQUEDA*/
+  /*MENU HEADER*/ }
+  .header .nav {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 5px;
+    width: 100%;
+    height: 80px;
+    background-color: #00C278; }
+    .header .nav .nav__search {
+      display: flex;
+      justify-content: flex-start;
+      flex-direction: row;
+      width: 65%;
+      height: 4rem;
+      padding-top: 8px;
+      z-index: 1;
+      margin-left: 5%; }
+      .header .nav .nav__search .nav__search__input {
+        display: flex;
+        flex-direction: row;
+        background-color: white;
+        padding-left: 4rem;
+        border-radius: 4px 0 0 4px;
+        border-color: white;
+        border-style: none;
+        font-size: 16px;
+        font-family: "Roboto Condensed", sans-serif;
+        z-index: 10;
+        width: 80%;
+        height: 2.5rem;
+        padding: 6px 6px 6px 2rem;
+        margin: 5px 5px 5px;
+        text-rendering: auto;
+        letter-spacing: normal;
+        word-spacing: normal;
+        text-transform: none;
+        cursor: text;
+        z-index: 1;
+        box-shadow: 2px 2px 5px black; }
+      .header .nav .nav__search .nav__search__button {
+        display: flex;
+        flex-direction: row;
+        width: 2rem;
+        height: 2.5rem;
+        border-radius: 0 4px 4px 0px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        z-index: 1;
+        border-style: none;
+        background-color: white;
+        box-shadow: 2px 2px 5px black; }
+  .header .nav__menu__list {
+    width: 70%;
+    margin-left: 27%;
+    /* lista 1 con enlaces*/
+    /* lista 1 sin enlaces*/
+    /* lista 1 sin enlaces*/ }
+    .header .nav__menu__list .nav__menu__itemlink {
+      color: black;
+      text-decoration: none;
+      padding: 2px 5px;
+      display: block;
+      font-size: 14px;
+      width: 15%;
+      /* contenedor calendario/tabla*/ }
+      .header .nav__menu__list .nav__menu__itemlink .nav__menu__calendar {
+        width: 100%;
+        /* contenedor calendario*/ }
+        .header .nav__menu__list .nav__menu__itemlink .nav__menu__calendar .nav__menu__calendar__1 {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          color: black;
+          text-decoration: none;
+          padding: 5px 15px;
+          background-color: white;
+          border-radius: 4px;
+          border-color: #D28900;
+          border-style: ridge;
+          width: 35vh;
+          height: 290px;
+          box-shadow: 2px 2px 5px black;
+          /*tabla calendario*/ }
+          .header .nav__menu__list .nav__menu__itemlink .nav__menu__calendar .nav__menu__calendar__1 .contenedor {
+            background-color: #DFEADC;
+            width: 100%;
+            height: 200px;
+            border: 1px solid black; }
+            .header .nav__menu__list .nav__menu__itemlink .nav__menu__calendar .nav__menu__calendar__1 .contenedor td {
+              border: 1px solid black;
+              align-items: center;
+              text-align: center; }
+    .header .nav__menu__list .nav__menu__item {
+      color: black;
+      text-decoration: none;
+      width: 6%;
+      height: 90%;
+      margin-left: 6%;
+      z-index: 1;
+      /* contenedor sublista 1*/ }
+      .header .nav__menu__list .nav__menu__item .nav__menu__sublist {
+        width: 35vh;
+        color: black;
+        background-color: white;
+        border-style: ridge;
+        border-color: #D28900;
+        box-shadow: 2px 2px 5px black;
+        /* sublista con enlaces perfil*/ }
+        .header .nav__menu__list .nav__menu__item .nav__menu__sublist .nav__menu__sublist__itemlink {
+          color: black;
+          background-color: white;
+          border-radius: 4px;
+          border-color: #D28900;
+          border-style: ridge;
+          font-size: 14px;
+          margin: 5px 5px 5px 5px; }
+    .header .nav__menu__list .nav__menu__item {
+      color: black;
+      text-decoration: none;
+      width: 6%;
+      height: 90%;
+      margin-left: 6%;
+      z-index: 1;
+      /* contenedor notificaciones*/ }
+      .header .nav__menu__list .nav__menu__item .nav__menu2__sublist {
+        padding: 1px 5px;
+        background-color: white;
+        border-radius: 4px;
+        border-color: #D28900;
+        border-style: ridge;
+        font-size: 14px;
+        width: 35vh;
+        box-shadow: 2px 2px 5px black;
+        /* lista 2 sin enlaces notificaciones*/ }
+        .header .nav__menu__list .nav__menu__item .nav__menu2__sublist .nav__menu2__sublist__item {
+          width: 95%;
+          color: black;
+          padding: 1px 5px;
+          background-color: white;
+          border-radius: 4px;
+          border-color: #D28900;
+          border-style: ridge;
+          font-size: 14px;
+          margin: 5px 5px 5px 5px; }
+
+.header2 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  height: 300px;
+  background-color: #00C278; }
+
+.slider {
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+  background-color: white; }
+  .slider ul {
+    display: flex;
+    text-align: center;
+    animation: cambio 20s infinite alternate linear;
+    width: 400%; }
+    .slider ul li {
+      width: 100%;
+      list-style: none; }
+      .slider ul li img {
+        width: 50%;
+        height: 37%; }
+
+.img {
+  width: 80%;
+  height: 300px; }
+
+.favoritos1 {
+  margin-left: 130px; }
+
+/*FOOTER*/
+.footer {
+  grid-area: footer;
+  background-color: white;
+  box-shadow: 2px 2px 5px black;
+  padding-top: 35px;
+  padding-bottom: auto;
+  width: 100%;
+  height: 100px; }
+  .footer .footer__p {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    font-size: 12px; }
+
+/*DATOS PERSONALES*/
+.tabla {
+  background-color: white;
+  width: 60%;
+  height: 300px;
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10%;
+  border-color: #D28900;
+  border-radius: 0 0 8px 8px;
+  box-shadow: 2px 2px 5px black;
+  border: 1px solid #D28900; }
+  .tabla .tabla__fila {
+    border: 1px solid #D28900;
+    text-align: center; }
+
+/*INICIAR SESION*/
+/* texto bienvenida, no te preocupes*/
+.box__texto__bienvenida {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-size: 30px;
+  padding-top: 25px; }
+  .box__texto__bienvenida .box__logo {
+    margin-left: 13px; }
+
+/* texto TicTac */
+.box__texto__tictac {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  font-size: 18px;
+  text-align: center;
+  padding-top: 5px; }
+
+/* caja contenedora olvidaste contraseña, primera vez*/
+.box__nuevo {
+  display: flex;
+  flex-direction: column;
+  padding-top: 30px;
+  text-align: center;
+  height: 90px; }
+  .box__nuevo .box__recuperar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: blue;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 12px; }
+
+/* texto ingresar datos de registro*/
+.box__texto__recuperar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px; }
+
+.titulo2 {
+  font-size: 32px;
+  margin-left: 50px;
+  margin-top: 20px; }
+
+/*ANIMACIONES*/
+/* SLIDER*/
+@keyframes cambio {
+  0% {
+    margin-left: 0%; }
+  20% {
+    margin-left: 0%; }
+  25% {
+    margin-left: -100%; }
+  45% {
+    margin-left: -100%; }
+  50% {
+    margin-left: -200%; }
+  70% {
+    margin-left: -200%; }
+  75% {
+    margin-left: -300%; }
+  100% {
+    margin-left: -300%; } }
+
+.hover:hover {
+  border: 1px solid #D28900;
+  box-shadow: 2px 2px 5px black; }
+
+.nav__menu__list li a:hover {
+  background-color: #DFEADC; }
+
+.nav__menu__list li ul {
+  display: none; }
+
+/*Aparece lista perfil*/
+.nav__menu__item:hover > .nav__menu__sublist {
+  display: block; }
+
+/*Aparece lista notificaciones*/
+.nav__menu__item:hover > .nav__menu2__sublist {
+  display: block; }
+
+/*Aparece calendario*/
+.nav__menu__itemlink:hover > .nav__menu__calendar {
+  display: block; }
+
+.box__logo {
+  animation: rotation 8s infinite linear; }
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(359deg); } }
+
+/*MEDIA QUERIES*/
+/*Tablet*/
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .grid__container {
+    /*background-color: orange;*/
+    grid-template-areas: "header" "slider" "section1" "section2" "section3" "footer"; }
+  .box__caja__logo, .box__caja__logo2 {
+    display: none; }
+  .header .nav .nav__search .nav__search__input {
+    font-size: 14px; }
+  .header .nav .nav__search {
+    margin-left: 5rem; }
+  .navbar-toggler {
+    position: absolute;
+    margin-top: -12%; }
+  .slider ul li img {
+    width: 70%;
+    height: 37%; }
+  .favoritos1 {
+    margin-left: 200px; } }
+
+/*MOBILE*/
+@media screen and (max-width: 769px) {
+  .grid__container {
+    background-color: white;
+    grid-template-areas: "header" "slider" "section1" "section2" "section3" "footer"; }
+  .box__caja__logo, .box__caja__logo2 {
+    display: none; }
+  .header .nav .nav__search .nav__search__input {
+    font-size: 14px; }
+  .header .nav .nav__search {
+    width: 80%;
+    height: 4rem;
+    padding-top: 8px;
+    z-index: 1;
+    margin-left: 5rem; }
+  .slider ul li img {
+    width: 90%;
+    height: 57%; }
+  .favoritos1 {
+    margin-left: 335px; }
+  .navbar-toggler {
+    position: absolute;
+    margin-top: -22%; }
+  .box__logo {
+    width: 15%;
+    margin-left: 5px; } }
