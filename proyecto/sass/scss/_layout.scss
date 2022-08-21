@@ -9,6 +9,6 @@
                         "footer";
     grid-template-rows: auto;
     grid-template-columns: auto;
-    font-family: $fuente;
-    background-color: $color-acento-inactivo;
+    font-family: map-get($estilos, fuente);
+    background-color: map-get($colorPalette, acento-inactivo);
 }

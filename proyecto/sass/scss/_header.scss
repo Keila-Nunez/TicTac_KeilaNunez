@@ -1,40 +1,29 @@
 .header{
     display: flex;
     flex-direction: column;
-    justify-items:center;
-    background-color: $color-primario;
+    justify-content:center;
+    background-color: map-get($colorPalette, primario);
     width: 100%;
     height: 100%; 
     /*BARRA DE BÚSQUEDA*/
     .nav{
-        display: flex;
-        flex-direction: row;
-        align-items: flex-start;
-        justify-content:flex-start;
         gap: 5px; 
         width: 100%;
         height: 80px;
-        background-color: $color-primario;
+        background-color: map-get($colorPalette, primario);
         .nav__search{
-            display: flex;
-            justify-content:flex-start;
-            flex-direction:row;
+            @include flex-row-start;
             width: 65%;
             height: 4rem;
             padding-top: 8px;
             z-index: 1;
             margin-left: 5%; 
             .nav__search__input{
-                display: flex;
-                flex-direction: row;
-                background-color: white;
+                @include flex-row-start;
                 padding-left: 4rem;
-                border-radius: 4px 0 0 4px;
                 border-color: white;
-                border-style:none;
-                font-size: $fuente-tamaño-grande;
-                font-family: $fuente;
-                z-index: 10;
+                font-size: map-get($sizes, 16);
+                font-family: map-get($estilos, fuente);
                 width: 80%;
                 height: 2.5rem;
                 padding: 6px 6px 6px 2rem;
@@ -45,25 +34,30 @@
                 text-transform: none;
                 cursor: text;
                 z-index: 1; 
+                border-style:none;
+                background-color: white;
+                border-radius: 4px 0 0 4px;
                 box-shadow: $sombra;
             }
             .nav__search__button{
-                display: flex;
-                flex-direction: row;
+                @include flex-row-start;
                 width: 2rem;
                 height: 2.5rem;
-                border-radius: 0 4px 4px 0px;
                 margin-top: 5px;
                 margin-bottom: 5px;
                 z-index: 1;
                 border-style: none;
                 background-color: white;
-                box-shadow: $sombra;   
+                border-radius: 0 4px 4px 0px;
+                box-shadow: $sombra;
+                .lupa{
+                    margin-top: 5px;
+                    margin-left: 2px;
+                }   
             } 
-
         }
     }
-    
+
     /*MENU HEADER*/
     .nav__menu__list{
         width: 70%;
@@ -71,32 +65,26 @@
         /* lista 1 con enlaces*/
         .nav__menu__itemlink{
             color: black;
-            text-decoration: none;
-            padding: 2px 5px;
+            text-decoration: none;  
             display: block;
-            font-size: $fuente-tamaño-mediano;
+            font-size: map-get($sizes, 16);
             width: 15%;
             /* contenedor calendario/tabla*/
             .nav__menu__calendar{ 
                 width: 100%;
                 /* contenedor calendario*/
                 .nav__menu__calendar__1{
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: center;
-                    color: black;
+                    @include flex-direction-center (row);
                     text-decoration: none;
                     padding: 5px 15px;
-                    background-color: white;
-                    border-radius: 4px;
-                    border-color: $color-secundario;
-                    border-style:ridge;
+                    @include menuList;
                     width: 35vh;
                     height: 290px;
                     box-shadow: $sombra;
+                    border: 1px solid map-get($colorPalette, secundario);
                     /*tabla calendario*/
                     .contenedor{
-                        background-color: $color-acento-inactivo;
+                        background-color: map-get($colorPalette, acento-inactivo);
                         width: 100%;
                         height: 200px;
                         border: 1px solid black;
@@ -120,19 +108,14 @@
             /* contenedor sublista 1*/
             .nav__menu__sublist{
                 width:35vh;
-                color: black;
-                background-color: white;
-                border-style: ridge;
-                border-color: $color-secundario;
+                @include menuList;
+                border-color: map-get($colorPalette, secundario);
                 box-shadow: $sombra;
                 /* sublista con enlaces perfil*/
                 .nav__menu__sublist__itemlink{
-                    color: black;
-                    background-color: white;
-                    border-radius: 4px;
-                    border-color: $color-secundario;
-                    border-style:ridge;
-                    font-size: $fuente-tamaño-mediano;
+                    @include menuList;
+                    border-color: map-get($colorPalette, secundario);
+                    font-size: map-get($sizes, 14);
                     margin: 5px 5px 5px 5px;
                 }
             } 
@@ -147,25 +130,18 @@
             z-index: 1;
             /* contenedor notificaciones*/
             .nav__menu2__sublist{
-                padding: 1px 5px;
-                background-color: white;
-                border-radius: 4px;
-                border-color: $color-secundario;
-                border-style:ridge;
-                font-size: $fuente-tamaño-mediano;  
+                @include menuList;
+                border-color: map-get($colorPalette, secundario);
+                font-size: map-get($sizes, 14);  
                 width: 35vh;
                 box-shadow: $sombra;
 
                 /* lista 2 sin enlaces notificaciones*/
                 .nav__menu2__sublist__item{
                     width: 95%;
-                    color: black;
-                    padding: 1px 5px;
-                    background-color: white;
-                    border-radius: 4px;
-                    border-color: $color-secundario;
-                    border-style:ridge;
-                    font-size: $fuente-tamaño-mediano;  
+                    @include menuList;
+                    border-color: map-get($colorPalette, secundario);
+                    font-size: map-get($sizes, 14);  
                     margin: 5px 5px 5px 5px;
                 }
             }
@@ -174,10 +150,8 @@
 }
       
 .header2{
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
+    @include flex-row-start;
     width: 100%;
     height: 300px;
-    background-color: $color-primario;
+    background-color: map-get($colorPalette, primario);
 }

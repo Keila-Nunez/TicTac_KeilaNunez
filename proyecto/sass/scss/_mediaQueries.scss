@@ -18,7 +18,7 @@
 
     
     .header .nav .nav__search .nav__search__input{
-        font-size: 14px; 
+        font-size: map-get($sizes, 14); 
     } 
     .header .nav .nav__search{
         margin-left: 5rem;  
@@ -33,7 +33,10 @@
         height: 37%;    
     }    
     .favoritos1{
-        margin-left: 200px;
+        margin-left: 190px;
+    }
+    .titulo {
+        font-size: 26px;
     }
 }
     
@@ -52,9 +55,10 @@
     .box__caja__logo, .box__caja__logo2 {
         display:none;
     } 
+   
     .header .nav .nav__search .nav__search__input{
-        font-size: 14px; 
-    }
+        font-size: map-get($sizes, 12); 
+    } 
     .header .nav .nav__search{
         width: 80%;
         height: 4rem;
@@ -76,5 +80,8 @@
     .box__logo{
         width: 15%;
         margin-left: 5px;
+    }
+    .titulo {
+        font-size: 24px;
     }
 }

@@ -16,6 +16,6 @@
         text-align: center;
         width: 100%;
         margin: auto;
-        font-size: $fuente-tamaño-pequeño;
+        font-size: map-get($sizes, 12);
     }
 }

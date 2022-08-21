@@ -16,13 +16,13 @@
 }
 
 .hover:hover {
-    border: 1px solid $color-secundario;
+    border: 1px solid map-get($colorPalette, secundario);
     box-shadow: $sombra;  
 }
    
 
 .nav__menu__list li a:hover{
-    background-color: $color-acento-inactivo;
+    background-color: map-get($colorPalette, acento-inactivo);
 }
 .nav__menu__list li ul{
     display: none;   

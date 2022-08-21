@@ -15,31 +15,28 @@ main {
   grid-template-areas: "header" "slider" "section1" "section2" "section3" "footer";
   grid-template-rows: auto;
   grid-template-columns: auto;
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: "Roboto Condensed";
   background-color: #DFEADC; }
 
 .header {
   display: flex;
   flex-direction: column;
-  justify-items: center;
+  justify-content: center;
   background-color: #00C278;
   width: 100%;
   height: 100%;
   /*BARRA DE BÚSQUEDA*/
   /*MENU HEADER*/ }
   .header .nav {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: flex-start;
     gap: 5px;
     width: 100%;
     height: 80px;
     background-color: #00C278; }
     .header .nav .nav__search {
       display: flex;
-      justify-content: flex-start;
       flex-direction: row;
+      justify-content: flex-start;
+      align-items: flex-start;
       width: 65%;
       height: 4rem;
       padding-top: 8px;
@@ -48,14 +45,12 @@ main {
       .header .nav .nav__search .nav__search__input {
         display: flex;
         flex-direction: row;
-        background-color: white;
+        justify-content: flex-start;
+        align-items: flex-start;
         padding-left: 4rem;
-        border-radius: 4px 0 0 4px;
         border-color: white;
-        border-style: none;
         font-size: 16px;
-        font-family: "Roboto Condensed", sans-serif;
-        z-index: 10;
+        font-family: "Roboto Condensed";
         width: 80%;
         height: 2.5rem;
         padding: 6px 6px 6px 2rem;
@@ -66,19 +61,27 @@ main {
         text-transform: none;
         cursor: text;
         z-index: 1;
+        border-style: none;
+        background-color: white;
+        border-radius: 4px 0 0 4px;
         box-shadow: 2px 2px 5px black; }
       .header .nav .nav__search .nav__search__button {
         display: flex;
         flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
         width: 2rem;
         height: 2.5rem;
-        border-radius: 0 4px 4px 0px;
         margin-top: 5px;
         margin-bottom: 5px;
         z-index: 1;
         border-style: none;
         background-color: white;
+        border-radius: 0 4px 4px 0px;
         box-shadow: 2px 2px 5px black; }
+        .header .nav .nav__search .nav__search__button .lupa {
+          margin-top: 5px;
+          margin-left: 2px; }
   .header .nav__menu__list {
     width: 70%;
     margin-left: 27%;
@@ -88,9 +91,8 @@ main {
     .header .nav__menu__list .nav__menu__itemlink {
       color: black;
       text-decoration: none;
-      padding: 2px 5px;
       display: block;
-      font-size: 14px;
+      font-size: 16px;
       width: 15%;
       /* contenedor calendario/tabla*/ }
       .header .nav__menu__list .nav__menu__itemlink .nav__menu__calendar {
@@ -100,16 +102,17 @@ main {
           display: flex;
           flex-direction: row;
           justify-content: center;
-          color: black;
+          align-items: center;
           text-decoration: none;
           padding: 5px 15px;
+          color: black;
           background-color: white;
           border-radius: 4px;
-          border-color: #D28900;
           border-style: ridge;
           width: 35vh;
           height: 290px;
           box-shadow: 2px 2px 5px black;
+          border: 1px solid #D28900;
           /*tabla calendario*/ }
           .header .nav__menu__list .nav__menu__itemlink .nav__menu__calendar .nav__menu__calendar__1 .contenedor {
             background-color: #DFEADC;
@@ -132,6 +135,7 @@ main {
         width: 35vh;
         color: black;
         background-color: white;
+        border-radius: 4px;
         border-style: ridge;
         border-color: #D28900;
         box-shadow: 2px 2px 5px black;
@@ -140,8 +144,8 @@ main {
           color: black;
           background-color: white;
           border-radius: 4px;
-          border-color: #D28900;
           border-style: ridge;
+          border-color: #D28900;
           font-size: 14px;
           margin: 5px 5px 5px 5px; }
     .header .nav__menu__list .nav__menu__item {
@@ -153,11 +157,11 @@ main {
       z-index: 1;
       /* contenedor notificaciones*/ }
       .header .nav__menu__list .nav__menu__item .nav__menu2__sublist {
-        padding: 1px 5px;
+        color: black;
         background-color: white;
         border-radius: 4px;
-        border-color: #D28900;
         border-style: ridge;
+        border-color: #D28900;
         font-size: 14px;
         width: 35vh;
         box-shadow: 2px 2px 5px black;
@@ -165,16 +169,16 @@ main {
         .header .nav__menu__list .nav__menu__item .nav__menu2__sublist .nav__menu2__sublist__item {
           width: 95%;
           color: black;
-          padding: 1px 5px;
           background-color: white;
           border-radius: 4px;
-          border-color: #D28900;
           border-style: ridge;
+          border-color: #D28900;
           font-size: 14px;
           margin: 5px 5px 5px 5px; }
 
 .header2 {
   display: flex;
+  flex-direction: row;
   justify-content: flex-start;
   align-items: flex-start;
   width: 100%;
@@ -260,26 +264,23 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
   width: 100%;
   height: 100%;
   font-size: 18px;
-  text-align: center;
   padding-top: 5px; }
 
 /* caja contenedora olvidaste contraseña, primera vez*/
-.box__nuevo {
+.box__nuevo, .box__nuevo .box__recuperar {
   display: flex;
   flex-direction: column;
-  padding-top: 30px;
-  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5px;
   height: 90px; }
   .box__nuevo .box__recuperar {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     color: blue;
-    font-family: "Roboto Condensed", sans-serif;
+    font-family: "Roboto Condensed";
     font-size: 12px; }
 
 /* texto ingresar datos de registro*/
@@ -288,12 +289,18 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-size: 32px; }
+  font-size: 30px; }
 
 .titulo2 {
   font-size: 32px;
   margin-left: 50px;
   margin-top: 20px; }
+
+.titulo {
+  font-size: 30px; }
+
+.servicio {
+  font-size: 18px; }
 
 /*ANIMACIONES*/
 /* SLIDER*/
@@ -365,7 +372,9 @@ main {
     width: 70%;
     height: 37%; }
   .favoritos1 {
-    margin-left: 200px; } }
+    margin-left: 190px; }
+  .titulo {
+    font-size: 26px; } }
 
 /*MOBILE*/
 @media screen and (max-width: 769px) {
@@ -375,7 +384,7 @@ main {
   .box__caja__logo, .box__caja__logo2 {
     display: none; }
   .header .nav .nav__search .nav__search__input {
-    font-size: 14px; }
+    font-size: 12px; }
   .header .nav .nav__search {
     width: 80%;
     height: 4rem;
@@ -392,4 +401,6 @@ main {
     margin-top: -22%; }
   .box__logo {
     width: 15%;
-    margin-left: 5px; } }
+    margin-left: 5px; }
+  .titulo {
+    font-size: 24px; } }

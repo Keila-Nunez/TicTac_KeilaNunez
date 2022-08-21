@@ -1,3 +1,4 @@
+
 /*DATOS PERSONALES*/
 .tabla{
     background-color: white;
@@ -7,13 +8,13 @@
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 10%;
-    border-color: $color-secundario;
+    border-color: map-get($colorPalette, secundario);
     border-radius: 0 0 8px 8px;
     box-shadow: $sombra;
-    border: 1px solid  $color-secundario;
+    border: 1px solid map-get($colorPalette, secundario);
 
     .tabla__fila{
-        border: 1px solid  $color-secundario;
+        border: 1px solid  map-get($colorPalette, secundario);
         text-align: center;
     }        
 }
@@ -22,12 +23,9 @@
 
 /* texto bienvenida, no te preocupes*/
 .box__texto__bienvenida{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    @include flex-direction-center (row);
     width: 100%;
-    font-size: 30px;
+    font-size: map-get($sizes, 30);
     padding-top: 25px;
     .box__logo{
         margin-left: 13px;
@@ -39,43 +37,43 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
     width: 100%;
     height: 100%;
-    font-size: 18px;
-    text-align: center;
+    font-size: map-get($sizes, 18);
     padding-top: 5px;  
 }
 
 /* caja contenedora olvidaste contraseña, primera vez*/
 .box__nuevo{
-    display: flex;
-    flex-direction: column;
-    padding-top: 30px;
-    text-align: center;
+    @include flex-direction-center (column);
+    padding-top: 5px;
     height: 90px;
     .box__recuperar{
-        display: flex ;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        @extend .box__nuevo;
         color: blue;
-        font-family: $fuente;
-        font-size: $fuente-tamaño-pequeño;
+        font-family: map-get($estilos, fuente);
+        font-size: map-get($sizes, 12);
     }
 }
 
 
 /* texto ingresar datos de registro*/
 .box__texto__recuperar{
-    display: flex;
-    flex-direction: column;
-    justify-content:center ;
-    align-items: center;
-    font-size: 32px;
+    @include flex-direction-center (column);
+    font-size: map-get($sizes, 30);
 } 
 
 .titulo2{
     font-size: 32px;
     margin-left: 50px;
     margin-top: 20px;
+}
+
+.titulo {
+    font-size: 30px;
+}
+
+.servicio{
+    font-size: map-get($sizes, 18);
 }

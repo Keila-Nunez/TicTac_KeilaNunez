@@ -1,0 +1,20 @@
+@mixin flex-row-start{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;    
+}
+
+@mixin flex-direction-center ($direction){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: center;
+    align-items: center;    
+}
+
+@mixin menuList{
+    color: black;
+    background-color: white;
+    border-radius: 4px;
+    border-style:ridge;   
+}
