@@ -6,9 +6,6 @@
   color: black;
   box-sizing: border-box; }
 
-main {
-  background-color: #DFEADC; }
-
 /*GRID*/
 .container__grid {
   display: grid;
@@ -83,6 +80,7 @@ main {
           margin-top: 5px;
           margin-left: 2px; }
   .header .nav__menu__list {
+    color: black;
     width: 70%;
     margin-left: 27%;
     /* lista 1 con enlaces*/
@@ -147,7 +145,8 @@ main {
           border-style: ridge;
           border-color: #D28900;
           font-size: 14px;
-          margin: 5px 5px 5px 5px; }
+          margin: 5px 5px 5px 5px;
+          text-decoration: none; }
     .header .nav__menu__list .nav__menu__item {
       color: black;
       text-decoration: none;
@@ -233,7 +232,7 @@ main {
   background-color: white;
   width: 60%;
   height: 300px;
-  margin-top: 100px;
+  margin-top: 50px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 10%;
@@ -297,10 +296,45 @@ main {
   margin-top: 20px; }
 
 .titulo {
-  font-size: 30px; }
+  font-size: 30px;
+  font-family: "Roboto Condensed"; }
 
 .servicio {
   font-size: 18px; }
+
+.titulo3 {
+  font-size: 30px;
+  font-family: "Roboto Condensed";
+  margin-left: 170px;
+  padding-top: 30px; }
+
+.titulo4 {
+  font-size: 24px;
+  font-family: "Roboto Condensed";
+  margin-left: 170px; }
+
+.titulo2 {
+  font-size: 32px;
+  margin-left: 50px;
+  margin-top: 20px; }
+
+.titulo {
+  font-size: 30px;
+  font-family: "Roboto Condensed"; }
+
+.servicio {
+  font-size: 18px; }
+
+.titulo3 {
+  font-size: 30px;
+  font-family: "Roboto Condensed";
+  margin-left: 170px;
+  padding-top: 30px; }
+
+.titulo4 {
+  font-size: 24px;
+  font-family: "Roboto Condensed";
+  margin-left: 170px; }
 
 /*ANIMACIONES*/
 /* SLIDER*/
@@ -384,7 +418,7 @@ main {
   .box__caja__logo, .box__caja__logo2 {
     display: none; }
   .header .nav .nav__search .nav__search__input {
-    font-size: 12px; }
+    font-size: 14px; }
   .header .nav .nav__search {
     width: 80%;
     height: 4rem;

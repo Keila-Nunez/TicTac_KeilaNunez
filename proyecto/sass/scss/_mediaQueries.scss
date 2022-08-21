@@ -49,15 +49,14 @@
                             "section1"
                             "section2"
                             "section3"
-                            "footer"
-            ;
+                            "footer";
     }
     .box__caja__logo, .box__caja__logo2 {
         display:none;
     } 
    
     .header .nav .nav__search .nav__search__input{
-        font-size: map-get($sizes, 12); 
+        font-size: map-get($sizes, 14); 
     } 
     .header .nav .nav__search{
         width: 80%;

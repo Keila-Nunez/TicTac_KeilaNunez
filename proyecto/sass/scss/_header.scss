@@ -60,6 +60,7 @@
 
     /*MENU HEADER*/
     .nav__menu__list{
+        color: black;
         width: 70%;
         margin-left: 27% ;
         /* lista 1 con enlaces*/
@@ -117,6 +118,7 @@
                     border-color: map-get($colorPalette, secundario);
                     font-size: map-get($sizes, 14);
                     margin: 5px 5px 5px 5px;
+                    text-decoration: none;
                 }
             } 
         }
