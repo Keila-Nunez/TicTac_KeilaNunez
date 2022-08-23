@@ -60,7 +60,7 @@
         padding: 6px 6px 2px 6px;
     } 
     .header .nav .nav__search{
-        width: 95%;
+        width: 80%;
         height: 4rem;
         padding-top: 8px;
         z-index: 1;
@@ -75,7 +75,7 @@
     }
     .navbar-toggler{
         position: absolute;
-        margin-top: -18%;
+        margin-top: -22%;
     }
     .box__logo{
         width: 15%;
@@ -86,6 +86,7 @@
         margin-top: 15px;
         margin-bottom: 5px;
         box-shadow: $sombra;
+        border-color: map-get($colorPalette, secundario);
 
     }
 }
