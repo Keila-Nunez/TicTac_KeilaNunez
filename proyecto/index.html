@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Sitio para solicitar turnos en centros de estética">
-    <meta name="keywords"  content=" turno, centro de estética, belleza, servicios, solicitud de turno">
+    <meta name="keywords"  content=" turno, centro de estética, belleza, servicios, solicitud de turnos">
     <link rel="icon" type="image" href="./multimedia/images/icon.png"/>
-    <link rel="stylesheet" href="./sass/css/estilos2.css"> 
+    <link rel="stylesheet" href="./css/estilos2.css"> 
     <link href="./css/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>    
     <title>TicTac Beauty</title>  
 </head>
@@ -108,20 +108,20 @@
         <div class="slider">
             <ul>
                 <li>
-                    <a href="../proyecto/pages/centro.html"><img class="container__img" src="./multimedia/images/zmcejas.jpeg" width="200px" height="200px"></a>
+                    <a href="../proyecto/pages/centro.html"><img class="container__img" src="./multimedia/images/zmcejas.jpg"></a>
                 </li>
                 <li>
-                    <a href="../proyecto/pages/centro.html"><img class="container__img" src="./multimedia/images/definit.jpg" ></a>
+                    <a href="../proyecto/pages/centro.html"><img class="container__img" src="./multimedia/images/definit.jpg"></a>
                 </li>
                 <li>
                     <a href="../proyecto/pages/centro.html"><img class="container__img" src="./multimedia/images/depifourever.png"></a> 
                 </li>
                 <li>
-                    <a href="../proyecto/pages/centro.html"><img class="container__img" src="./multimedia/images/beautyface.jpg"></a>
+                    <a href="../proyecto/pages/centro.html"><img class="container__img" src="./multimedia/images/beautyface.png"></a>
                 </li>
             </ul>
         </div> 
-        <!-- FIN DE SLAIDER -->
+        <!-- FIN DE SLIDER -->
         <!-- INICIO SECTION 1 -->
         <section class="container w-60">
             <div class="row pt-2 pb-2">
@@ -130,34 +130,52 @@
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-12 pt-2 pb-5 ">
                     <div class="card h-80 hover">
-                        <img src="./multimedia/images/microshading.jpeg" class="card-img-top " alt="cejas maquilladas">
+                        <img class="card-img-top d-lg-block d-md-block d-sm-none d-none"
+                                srcset="./multimedia/images/microshadingm.jpg 560w,
+                                        ./multimedia/images/microshadingt.jpg 600w,
+                                        ./multimedia/images/microshading.jpg 1080w"
+                                        src="./multimedia/images/microshading.jpg 1080w" alt="cejas maquilladas"> 
+                        <img src="./multimedia/images/vistorecientemente.jpg" class="card-img-top d-lg-none d-md-none d-sm-block d-block" alt="ojos de  mujer">
+                        <div class="card-body">
+                            <a href="./pages/historial.html"><h2 class="d-lg-none d-md-none d-sm-block d-block verMas">Ver más</h2></a>
+                            <h2 class="d-lg-block d-md-block d-sm-none d-none card-title servicio">Servicio ofecido</h2>
+                            <p class="d-lg-block d-md-block d-sm-none d-none card-text">$ Precio <img class="favoritos1" src="./multimedia/images/inactivo.png" alt="corazón"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 pt-2 pb-5 d-lg-block d-md-block d-sm-none d-none">
+                    <div class="card h-80 hover">
+                        <img class="card-img-top d-lg-block d-md-block d-sm-none d-none"
+                                srcset="./multimedia/images/liftinghombrem.jpg 560w,
+                                        ./multimedia/images/liftinghombret.jpg 600w,
+                                        ./multimedia/images/liftinghombre.jpg 1080w"
+                                src="./multimedia/images/liftinghombre.jpg 1080w" alt="pestañas de hombre"> 
                         <div class="card-body">
                             <h2 class="card-title servicio">Servicio ofecido</h2>
                             <p class="card-text">$ Precio <img class="favoritos1" src="./multimedia/images/inactivo.png" alt="corazón"></p>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-sm-12 pt-2 pb-5">
+                <div class="col-lg-3 col-md-6 col-sm-12 pt-2 pb-5 d-lg-block d-md-block d-sm-none d-none">
                     <div class="card h-80 hover">
-                        <img src="./multimedia/images/liftinghombre.jpeg" class="card-img-top" alt="pestañas de hombre">
+                        <img class="card-img-top d-lg-block d-md-block d-sm-none d-none"
+                        srcset="./multimedia/images/liftingdepestanasm.jpg 560w,
+                                ./multimedia/images/liftingdepestanast.jpg 600w,
+                                ./multimedia/images/liftingdepestanas.jpg 1080w"
+                        src="./multimedia/images/liftingdepestanas.jpg 1080w" alt="pestañas de mujer"> 
                         <div class="card-body">
                             <h2 class="card-title servicio">Servicio ofecido</h2>
                             <p class="card-text">$ Precio <img class="favoritos1" src="./multimedia/images/inactivo.png" alt="corazón"></p>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-sm-12 pt-2 pb-5">
+                <div class="col-lg-3 col-md-6 col-sm-12 pt-2 pb-5 d-lg-block d-md-block d-sm-none d-none">
                     <div class="card h-80 hover">
-                        <img src="./multimedia/images/liftingdepestanas.jpeg" class="card-img-top" alt="pestañas de mujer">
-                        <div class="card-body">
-                            <h2 class="card-title servicio">Servicio ofecido</h2>
-                            <p class="card-text">$ Precio <img class="favoritos1" src="./multimedia/images/inactivo.png" alt="corazón"></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-12 pt-2 pb-5">
-                    <div class="card h-80 hover">
-                        <img src="./multimedia/images/laminado.jpeg" class="card-img-top" alt="pestañas y ceja de mujer">
+                        <img class="card-img-top d-lg-block d-md-block d-sm-none d-none"
+                        srcset="./multimedia/images/laminadom.jpg 560w,
+                                ./multimedia/images/laminadot.jpg 600w,
+                                ./multimedia/images/laminado.jpg 1080w"
+                        src="./multimedia/images/laminado.jpg 1080w" alt="pestañas y ceja de mujer"> 
                         <div class="card-body">
                             <h2 class="card-title servicio">Servicio ofecido</h2>
                             <p class="card-text">$ Precio <img class="favoritos1" src="./multimedia/images/inactivo.png" alt="corazón"></p>
@@ -175,34 +193,52 @@
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-12 pt-2 pb-5">
                     <div class="card h-80 hover">
-                        <img src="./multimedia/images/mascarilla.jpeg" class="card-img-top" alt="rostro de mujer con mascarilla">
+                        <img class="card-img-top d-lg-block d-md-block d-sm-none d-none"
+                        srcset="./multimedia/images/mascarillam.jpg 560w,
+                                ./multimedia/images/mascarillat.jpg 600w,
+                                ./multimedia/images/mascarilla.jpg 1080w"
+                        src="./multimedia/images/mascarilla.jpg 1080w" alt="rostro de mujer con mascarilla"> 
+                        <img src="./multimedia/images/favoritos.jpg" class="card-img-top d-lg-none d-md-none d-sm-block d-block" alt="ojos de  mujer">
+                        <div class="card-body">
+                            <a href="./pages/favoritos.html"><h2 class="d-lg-none d-md-none d-sm-block d-block verMas">Ver más</h2></a>
+                            <h2 class="d-lg-block d-md-block d-sm-none d-none card-title servicio">Servicio ofecido</h2>
+                            <p class="d-lg-block d-md-block d-sm-none d-none card-text">$ Precio <img class="favoritos1" src="./multimedia/images/inactivo.png" alt="corazón"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 pt-2 pb-5 d-lg-block d-md-block d-sm-none d-none">
+                    <div class="card h-80 hover">
+                        <img class="card-img-top d-lg-block d-md-block d-sm-none d-none"
+                        srcset="./multimedia/images/limpiezadecutism.jpg 560w,
+                                ./multimedia/images/limpiezadecutist.jpg 600w,
+                                ./multimedia/images/limpiezadecutis.jpg 1080w"
+                        src="./multimedia/images/limpiezadecutis.jpg 1080w" alt="rostro natural de hombre"> 
                         <div class="card-body">
                             <h2 class="card-title servicio">Servicio ofecido</h2>
                             <p class="card-text">$ Precio <img class="favoritos1" src="./multimedia/images/inactivo.png" alt="corazón"></p>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-sm-12 pt-2 pb-5">
+                <div class="col-lg-3 col-md-6 col-sm-12 pt-2 pb-5 d-lg-block d-md-block d-sm-none d-none">
                     <div class="card h-80 hover">
-                        <img src="./multimedia/images/limpiezadecutism.jpeg" class="card-img-top" alt="rostro natural de mujer">
+                        <img class="card-img-top d-lg-block d-md-block d-sm-none d-none"
+                        srcset="./multimedia/images/radiofrecuenciafacialm.jpg 560w,
+                                ./multimedia/images/radiofrecuenciafacialt.jpg 600w,
+                                ./multimedia/images/radiofrecuenciafacial.jpg 1080w"
+                        src="./multimedia/images/radiofrecuenciafacial.jpg 1080w" alt="rostro natural de mujer"> 
                         <div class="card-body">
                             <h2 class="card-title servicio">Servicio ofecido</h2>
                             <p class="card-text">$ Precio <img class="favoritos1" src="./multimedia/images/inactivo.png" alt="corazón"></p>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-sm-12 pt-2 pb-5">
+                <div class="col-lg-3 col-md-6 col-sm-12 pt-2 pb-5 d-lg-block d-md-block d-sm-none d-none">
                     <div class="card h-80 hover">
-                        <img src="./multimedia/images/limpiezadecutis.jpeg" class="card-img-top" alt="rostro natural de hombre">
-                        <div class="card-body">
-                            <h2 class="card-title servicio">Servicio ofecido</h2>
-                            <p class="card-text">$ Precio <img class="favoritos1" src="./multimedia/images/inactivo.png" alt="corazón"></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-12 pt-2 pb-5">
-                    <div class="card h-80 hover">
-                        <img src="./multimedia/images/electroporacion.jpeg" class="card-img-top" alt="rostro de mujer con tratamiento de aparatología">
+                        <img class="card-img-top d-lg-block d-md-block d-sm-none d-none"
+                        srcset="./multimedia/images/electroporacionm.jpg 560w,
+                                ./multimedia/images/electroporaciont.jpg 600w,
+                                ./multimedia/images/electroporacion.jpg 1080w"
+                        src="./multimedia/images/electroporacion.jpg 1080w" alt="rostro de mujer con tratamiento de aparatología"> 
                         <div class="card-body">
                             <h2 class="card-title servicio">Servicio ofecido</h2>
                             <p class="card-text">$ Precio <img class="favoritos1" src="./multimedia/images/inactivo.png" alt="corazón"></p>
@@ -220,34 +256,52 @@
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-12 pt-2 pb-5">
                     <div class="card h-80 hover">
-                        <img src="./multimedia/images/zonaparahombres.jpeg" class="card-img-top" alt="medio cuerpo de hombre de perfil">
+                        <img class="card-img-top d-lg-block d-md-block d-sm-none d-none"
+                        srcset="./multimedia/images/zonaparahombresm.jpg 560w,
+                                ./multimedia/images/zonaparahombrest.jpg 600w,
+                                ./multimedia/images/zonaparahombres.jpg 1080w"
+                        src="./multimedia/images/zonaparahombres.jpg 1080w" alt="medio cuerpo de hombre de perfil"> 
+                        <img src="./multimedia/images/recomendaciones.jpg" class="card-img-top d-lg-none d-md-none d-sm-block d-block" alt="rostro de  mujer">
+                        <div class="card-body">
+                            <a href="./pages/recomendaciones.html"><h2 class="d-lg-none d-md-none d-sm-block d-block verMas">Ver más</h2></a>
+                            <h2 class="d-lg-block d-md-block d-sm-none d-none card-title servicio">Servicio ofecido</h2>
+                            <p class="d-lg-block d-md-block d-sm-none d-none card-text">$ Precio <img class="favoritos1" src="./multimedia/images/inactivo.png" alt="corazón"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 pt-2 pb-5 d-lg-block d-md-block d-sm-none d-none">
+                    <div class="card h-80 hover">
+                        <img class="card-img-top d-lg-block d-md-block d-sm-none d-none"
+                        srcset="./multimedia/images/piernasm.jpg 560w,
+                                ./multimedia/images/piernast.jpg 600w,
+                                ./multimedia/images/piernas.jpg 1080w"
+                        src="./multimedia/images/piernas.jpg 1080w" alt="piernas de mujer">
                         <div class="card-body">
                             <h2 class="card-title servicio">Servicio ofecido</h2>
                             <p class="card-text">$ Precio <img class="favoritos1" src="./multimedia/images/inactivo.png" alt="corazón"></p>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-sm-12 pt-2 pb-5">
+                <div class="col-lg-3 col-md-6 col-sm-12 pt-2 pb-5 d-lg-block d-md-block d-sm-none d-none">
                     <div class="card h-80 hover">
-                        <img src="./multimedia/images/piernas.jpeg" class="card-img-top" alt="piernas de mujer">
+                        <img class="card-img-top d-lg-block d-md-block d-sm-none d-none"
+                        srcset="./multimedia/images/cavadom.jpg 560w,
+                                ./multimedia/images/cavadot.jpg 600w,
+                                ./multimedia/images/cavado.jpg 1080w"
+                        src="./multimedia/images/cavado.jpg 1080w" alt="piernas de mujer">
                         <div class="card-body">
                             <h2 class="card-title servicio">Servicio ofecido</h2>
                             <p class="card-text">$ Precio <img class="favoritos1" src="./multimedia/images/inactivo.png" alt="corazón"></p>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-sm-12 pt-2 pb-5">
+                <div class="col-lg-3 col-md-6 col-sm-12 pt-2 pb-5 d-lg-block d-md-block d-sm-none d-none">
                     <div class="card h-80 hover">
-                        <img src="./multimedia/images/cavado.jpeg" class="card-img-top" alt="piernas de mujer">
-                        <div class="card-body">
-                            <h2 class="card-title servicio">Servicio ofecido</h2>
-                            <p class="card-text">$ Precio <img class="favoritos1" src="./multimedia/images/inactivo.png" alt="corazón"></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-12 pt-2 pb-5">
-                    <div class="card h-80 hover">
-                        <img src="./multimedia/images/bozo.jpeg" class="card-img-top" alt="bozo de mujer">
+                        <img class="card-img-top d-lg-block d-md-block d-sm-none d-none"
+                        srcset="./multimedia/images/bozom.jpg 560w,
+                                ./multimedia/images/bozot.jpg 600w,
+                                ./multimedia/images/bozo.jpg 1080w"
+                        src="./multimedia/images/bozo.jpg 1080w" alt="bozo de mujer">
                         <div class="card-body">
                             <h2 class="card-title servicio">Servicio ofecido</h2>
                             <p class="card-text">$ Precio <img class="favoritos1" src="./multimedia/images/inactivo.png" alt="corazón"></p>
