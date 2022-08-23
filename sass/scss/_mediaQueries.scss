@@ -57,6 +57,7 @@
    
     .header .nav .nav__search .nav__search__input{
         font-size: map-get($sizes, 14); 
+        padding: 6px 6px 2px 6px;
     } 
     .header .nav .nav__search{
         width: 80%;
