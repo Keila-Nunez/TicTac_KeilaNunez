@@ -104,24 +104,40 @@
         <!-- FIN DE MENU-->
     </header> 
     <main>  
-        <!-- INICIO DE SLIDER -->
-        <div class="slider">
-            <ul>
-                <li>
-                    <img class="container__img" src="./multimedia/images/zmcejas.jpg" alt="logo ZM Cejas">
-                </li>
-                <li>
-                    <img class="container__img" src="./multimedia/images/definit.png"  alt="logo Definit">
-                </li>
-                <li>
-                    <img class="container__img" src="./multimedia/images/depifourever.png"  alt="logo Depi4ever">
-                </li>
-                <li>
-                    <img class="container__img" src="./multimedia/images/beautyface.png"  alt="logo Beauty face">
-                </li>
-            </ul>
-        </div> 
-        <!-- FIN DE SLIDER -->
+        <!-- INICIO DE CARRUSEL -->
+        <div id="carouselExampleDark" class="carousel carousel-dark slide bg-light w-100 carrusel shadow p-3 mb-5 bg-body rounded" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="10000">
+                <img src="./multimedia/images/zmcejas.jpg" loading="lazy" class="d-block w-50 img__carrusel" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="./multimedia/images/definit.png" loading="lazy" class="d-block w-50 img__carrusel" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./multimedia/images/depifourever.png" loading="lazy" class="d-block w-50 img__carrusel" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./multimedia/images/beautyface.png" loading="lazy" class="d-block w-50 img__carrusel" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div> 
+        <!-- FIN DE CARRUSEL-->
         <!-- INICIO SECTION 1 -->
         <section class="container w-60">
             <div class="row pt-2 pb-2">

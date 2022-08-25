@@ -194,28 +194,6 @@ main {
   height: 300px;
   background-color: #00C278; }
 
-.slider {
-  width: 100%;
-  height: 230px;
-  overflow: hidden;
-  background-color: white;
-  box-shadow: 2px 2px 7px black; }
-  .slider ul {
-    display: flex;
-    text-align: center;
-    animation: cambio 20s infinite alternate linear;
-    width: 400%; }
-    .slider ul li {
-      width: 100%;
-      list-style: none; }
-      .slider ul li img {
-        width: 30%;
-        height: 55%;
-        padding-top: auto;
-        padding-bottom: auto;
-        padding-left: auto;
-        padding-right: auto; }
-
 .img {
   width: 80%;
   height: 300px; }
@@ -230,6 +208,10 @@ main {
 
 .imgG {
   box-shadow: 2px 2px 7px black; }
+
+.img__carrusel {
+  height: 280px;
+  margin: auto; }
 
 /*FOOTER*/
 .footer {
@@ -312,6 +294,9 @@ main {
   justify-content: center;
   align-items: center;
   font-size: 30px; }
+
+.carrusel {
+  box-shadow: 2px 2px 7px black; }
 
 .titulo2 {
   font-size: 32px;

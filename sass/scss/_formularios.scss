@@ -63,3 +63,8 @@
     @include flex-direction-center (column);
     font-size: map-get($sizes, 30);
 } 
+
+//CARRUSEL
+.carrusel{
+    box-shadow: $sombra;
+}
