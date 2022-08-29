@@ -29,7 +29,7 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: #DF6496;
+  background-color: #F1B6CA;
   width: 100%;
   height: 100%;
   /*BARRA DE BÚSQUEDA*/
@@ -38,7 +38,7 @@ main {
     gap: 5px;
     width: 100%;
     height: 80px;
-    background-color: #DF6496; }
+    background-color: #F1B6CA; }
     .header .nav .nav__search {
       display: flex;
       flex-direction: row;
