@@ -13,13 +13,17 @@
   color: black;
   box-sizing: border-box; }
 
+body {
+  background-color: #FFE3ED; }
+
 /*GRID*/
 .container__grid {
   display: grid;
   grid-template-areas: "header" "slider" "section1" "section2" "section3" "footer";
   grid-template-rows: auto;
   grid-template-columns: auto;
-  font-family: "Roboto Condensed"; }
+  font-family: "Roboto Condensed";
+  background-color: #FEEBF1; }
 
 .header {
   display: flex;
@@ -246,7 +250,7 @@
     .footer .footer1 .nosotros__info {
       font-size: 14px; }
   .footer .derechos {
-    font-size: 14px;
+    font-size: 12px;
     margin-left: 44px; }
 
 /*DATOS PERSONALES*/
@@ -453,7 +457,7 @@
     margin-left: 335px; }
   .navbar-toggler {
     position: absolute;
-    margin-top: -24%; }
+    margin-top: -26%; }
   .box__logo {
     width: 15%;
     margin-left: 5px; }
