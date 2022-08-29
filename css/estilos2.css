@@ -206,9 +206,6 @@ main {
   height: 80%;
   padding-top: 50px; }
 
-.imgG {
-  box-shadow: 2px 2px 7px black; }
-
 .img__carrusel {
   height: 280px;
   margin: auto; }
@@ -236,18 +233,20 @@ main {
     .footer .footer1 .nosotros {
       margin-bottom: 25px;
       font-size: 16px; }
-    .footer .footer1 .colorInstagram {
-      color: magenta;
-      font-size: 28px;
-      margin-right: 10px; }
-    .footer .footer1 .colorAzul {
-      color: navy;
-      font-size: 28px;
-      margin-right: 10px; }
-    .footer .footer1 .colorVerde {
-      color: #00a500;
-      font-size: 28px;
-      margin-right: 10px; }
+    .footer .footer1 .container__redes {
+      width: 70%;
+      height: 100%; }
+      .footer .footer1 .container__redes .color {
+        display: inline-block;
+        text-decoration: none;
+        width: 45px;
+        height: 45px;
+        font-size: 28px;
+        line-height: 45px;
+        color: white;
+        margin-right: 10px;
+        background-color: black;
+        text-align: center; }
     .footer .footer1 .nosotros__info {
       font-size: 14px; }
   .footer .derechos {

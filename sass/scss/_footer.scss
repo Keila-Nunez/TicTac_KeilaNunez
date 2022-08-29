@@ -23,24 +23,25 @@
             margin-bottom: 25px;
             font-size: map-get($sizes, 16);
         }
-        .colorInstagram{
-            color:rgb(255, 0, 255);
-            font-size: 28px;  
-            margin-right: 10px;
-        }
-        .colorAzul{
-            color:rgb(0, 0, 128);
-            font-size: 28px;  
-            margin-right: 10px;    
-        }
-        .colorVerde{
-            color:rgb(0, 165, 0);
-            font-size: 28px;
-            margin-right: 10px; 
-        }
+        .container__redes{
+            width: 70%;
+            height: 100%;
+            .color{
+                display: inline-block;
+                text-decoration: none;
+                width: 45px;
+                height: 45px;
+                font-size: 28px;
+                line-height: 45px;
+                color: white;
+                margin-right: 10px;
+                background-color: black;
+                text-align: center;
+            }
+
+        } 
         .nosotros__info{
             font-size: map-get($sizes, 14);
-
         }  
     }
     .derechos{
