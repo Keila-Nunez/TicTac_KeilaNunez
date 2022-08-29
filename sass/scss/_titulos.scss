@@ -32,3 +32,20 @@
     font-family: map-get($estilos, fuente);
     margin-left: 80%;
 }
+
+.description{
+    position: absolute;
+    background-color:rgba(250, 168, 168, 0.4); 
+    font-size: map-get($sizes, 30);
+    text-align: center;
+    width: 100%;
+}
+
+.description2{
+    background-color:rgba(250, 168, 168, 0.4); 
+    font-size: map-get($sizes, 30);
+    text-align: center;
+    width: 100%;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
