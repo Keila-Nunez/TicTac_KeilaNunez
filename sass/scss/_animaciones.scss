@@ -22,7 +22,7 @@
    
 
 .nav__menu__list li a:hover{
-    background-color: map-get($colorPalette, acento-inactivo);
+    background-color: map-get($colorPalette, acento-activo);
 }
 .nav__menu__list li ul{
     display: none;   

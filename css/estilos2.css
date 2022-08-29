@@ -13,17 +13,13 @@
   color: black;
   box-sizing: border-box; }
 
-main {
-  background-color: #DFEADC; }
-
 /*GRID*/
 .container__grid {
   display: grid;
   grid-template-areas: "header" "slider" "section1" "section2" "section3" "footer";
   grid-template-rows: auto;
   grid-template-columns: auto;
-  font-family: "Roboto Condensed";
-  background-color: #DFEADC; }
+  font-family: "Roboto Condensed"; }
 
 .header {
   display: flex;
@@ -123,7 +119,7 @@ main {
           border: 1px solid #D28900;
           /*tabla calendario*/ }
           .header .nav__menu__list .nav__menu__itemlink .nav__menu__calendar .nav__menu__calendar__1 .contenedor {
-            background-color: #DFEADC;
+            background-color: #DF6496;
             width: 100%;
             height: 200px;
             border: 1px solid black; }
@@ -192,7 +188,7 @@ main {
   align-items: flex-start;
   width: 100%;
   height: 300px;
-  background-color: #00C278; }
+  background-color: #F1B6CA; }
 
 .img {
   width: 80%;
@@ -213,7 +209,7 @@ main {
 /*FOOTER*/
 .footer {
   grid-area: footer;
-  background-color: #00C278;
+  background-color: #F1B6CA;
   width: 100%; }
   .footer .footer1 {
     width: 100%;
@@ -319,6 +315,9 @@ main {
 .carrusel {
   box-shadow: 2px 2px 7px black; }
 
+.boton {
+  background-color: #DF6496; }
+
 .titulo2 {
   font-size: 32px;
   margin-left: 50px;
@@ -388,7 +387,7 @@ main {
   box-shadow: 2px 2px 7px black; }
 
 .nav__menu__list li a:hover {
-  background-color: #DFEADC; }
+  background-color: #DF6496; }
 
 .nav__menu__list li ul {
   display: none; }

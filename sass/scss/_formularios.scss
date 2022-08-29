@@ -68,3 +68,7 @@
 .carrusel{
     box-shadow: $sombra;
 }
+
+.boton{
+    background-color: map-get($colorPalette, acento-activo);
+}
