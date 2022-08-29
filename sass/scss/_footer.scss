@@ -1,21 +1,50 @@
-
 /*FOOTER*/
 .footer{
     grid-area: footer;
-    background-color: white;
-    box-shadow: $sombra;
-    padding-top: 35px ;
-    padding-bottom: auto;
+    background-color: map-get($colorPalette , primario );
     width: 100%;
-    height: 100px;
-    .footer__p{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
+    .footer1{
         width: 100%;
+        max-width: 1200px;
         margin: auto;
+        display: grid;
         font-size: map-get($sizes, 12);
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 50px;
+        padding: 45px 0px;
+        .footer1__img{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }    
+        .nosotros{
+            margin-bottom: 25px;
+            font-size: map-get($sizes, 16);
+        }
+        .colorInstagram{
+            color:rgb(255, 0, 255);
+            font-size: 28px;  
+            margin-right: 10px;
+        }
+        .colorAzul{
+            color:rgb(0, 0, 128);
+            font-size: 28px;  
+            margin-right: 10px;    
+        }
+        .colorVerde{
+            color:rgb(0, 165, 0);
+            font-size: 28px;
+            margin-right: 10px; 
+        }
+        .nosotros__info{
+            font-size: map-get($sizes, 14);
+
+        }  
+    }
+    .derechos{
+        font-size: map-get($sizes, 14);
+        margin-left: 44px;
     }
 }

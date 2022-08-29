@@ -216,21 +216,43 @@ main {
 /*FOOTER*/
 .footer {
   grid-area: footer;
-  background-color: white;
-  box-shadow: 2px 2px 7px black;
-  padding-top: 35px;
-  padding-bottom: auto;
-  width: 100%;
-  height: 100px; }
-  .footer .footer__p {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+  background-color: #00C278;
+  width: 100%; }
+  .footer .footer1 {
     width: 100%;
+    max-width: 1200px;
     margin: auto;
-    font-size: 12px; }
+    display: grid;
+    font-size: 12px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px; }
+    .footer .footer1 .footer1__img {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+    .footer .footer1 .nosotros {
+      margin-bottom: 25px;
+      font-size: 16px; }
+    .footer .footer1 .colorInstagram {
+      color: magenta;
+      font-size: 28px;
+      margin-right: 10px; }
+    .footer .footer1 .colorAzul {
+      color: navy;
+      font-size: 28px;
+      margin-right: 10px; }
+    .footer .footer1 .colorVerde {
+      color: #00a500;
+      font-size: 28px;
+      margin-right: 10px; }
+    .footer .footer1 .nosotros__info {
+      font-size: 14px; }
+  .footer .derechos {
+    font-size: 14px;
+    margin-left: 44px; }
 
 /*DATOS PERSONALES*/
 .tabla {
