@@ -13,7 +13,7 @@
   color: black;
   box-sizing: border-box; }
 
-body {
+.cuerpo {
   background-color: #FFE3ED; }
 
 /*GRID*/
@@ -29,7 +29,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: #F1B6CA;
+  background-color: #DF6496;
   width: 100%;
   height: 100%;
   /*BARRA DE BÚSQUEDA*/
@@ -38,7 +38,7 @@ body {
     gap: 5px;
     width: 100%;
     height: 80px;
-    background-color: #F1B6CA; }
+    background-color: #DF6496; }
     .header .nav .nav__search {
       display: flex;
       flex-direction: row;
@@ -123,7 +123,7 @@ body {
           border: 1px solid #D28900;
           /*tabla calendario*/ }
           .header .nav__menu__list .nav__menu__itemlink .nav__menu__calendar .nav__menu__calendar__1 .contenedor {
-            background-color: #DF6496;
+            background-color: #F1B6CA;
             width: 100%;
             height: 200px;
             border: 1px solid black; }
@@ -192,7 +192,7 @@ body {
   align-items: flex-start;
   width: 100%;
   height: 300px;
-  background-color: #F1B6CA; }
+  background-color: #DF6496; }
 
 .img {
   width: 80%;
@@ -213,7 +213,7 @@ body {
 /*FOOTER*/
 .footer {
   grid-area: footer;
-  background-color: #F1B6CA;
+  background-color: #DF6496;
   width: 100%; }
   .footer .footer1 {
     width: 100%;
@@ -320,7 +320,7 @@ body {
   box-shadow: 2px 2px 7px black; }
 
 .boton {
-  background-color: #DF6496; }
+  background-color: #F1B6CA; }
 
 .titulo2 {
   font-size: 32px;
@@ -391,7 +391,7 @@ body {
   box-shadow: 2px 2px 7px black; }
 
 .nav__menu__list li a:hover {
-  background-color: #DF6496; }
+  background-color: #F1B6CA; }
 
 .nav__menu__list li ul {
   display: none; }
