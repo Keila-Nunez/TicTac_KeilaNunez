@@ -58,7 +58,6 @@
             } 
         }
     }
-
     /*MENU HEADER*/
     .nav__menu__list{
         color: black;
@@ -116,7 +115,7 @@
                 .nav__menu__sublist__itemlink{
                     @include menuList;
                     border-color: map-get($colorPalette, secundario);
-                    font-size: map-get($sizes, 14);
+                    font-size: map-get($sizes, 16);
                     margin: 5px 5px 5px 5px;
                 }
             } 
@@ -133,7 +132,7 @@
             .nav__menu2__sublist{
                 @include menuList;
                 border-color: map-get($colorPalette, secundario);
-                font-size: map-get($sizes, 14);  
+                font-size: map-get($sizes, 16);  
                 width: 35vh;
                 box-shadow: $sombra;
 
@@ -141,7 +140,7 @@
                 .nav__menu2__sublist__item{
                     @include menuList;
                     border-color: map-get($colorPalette, secundario);
-                    font-size: map-get($sizes, 14);  
+                    font-size: map-get($sizes, 16);  
                     margin: 5px 5px 5px 5px;
                 }
             }
