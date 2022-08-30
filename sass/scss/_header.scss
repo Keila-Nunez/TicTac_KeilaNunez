@@ -118,7 +118,6 @@
                     border-color: map-get($colorPalette, secundario);
                     font-size: map-get($sizes, 14);
                     margin: 5px 5px 5px 5px;
-                    text-decoration: none;
                 }
             } 
         }
@@ -153,6 +152,6 @@
 .header2{
     @include flex-row-start;
     width: 100%;
-    height: 300px;
+    height: 250px;
     background-color: map-get($colorPalette, primario);
 }
