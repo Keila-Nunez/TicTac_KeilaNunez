@@ -3,6 +3,7 @@
     grid-area: footer;
     background-color: map-get($colorPalette , primario );
     width: 100%;
+    box-shadow: $sombra;
     .footer1{
         width: 100%;
         max-width: 1200px;

@@ -32,6 +32,7 @@
   background-color: #DF6496;
   width: 100%;
   height: 100%;
+  box-shadow: 2px 2px 7px black;
   /*BARRA DE BÚSQUEDA*/
   /*MENU HEADER*/ }
   .header .nav {
@@ -91,8 +92,7 @@
           margin-left: 2px; }
   .header .nav__menu__list {
     color: black;
-    width: 70%;
-    margin-left: 27%;
+    margin-left: 30%;
     /* lista 1 con enlaces*/
     /* lista 1 sin enlaces*/
     /* lista 1 sin enlaces*/ }
@@ -101,7 +101,7 @@
       text-decoration: none;
       display: block;
       font-size: 16px;
-      width: 15%;
+      width: 10%;
       /* contenedor calendario/tabla*/ }
       .header .nav__menu__list .nav__menu__itemlink .nav__menu__calendar {
         width: 100%;
@@ -120,7 +120,7 @@
           width: 35vh;
           height: 290px;
           box-shadow: 2px 2px 7px black;
-          border: 1px solid #D28900;
+          border: 1px solid #EE0865;
           /*tabla calendario*/ }
           .header .nav__menu__list .nav__menu__itemlink .nav__menu__calendar .nav__menu__calendar__1 .contenedor {
             background-color: #F1B6CA;
@@ -134,7 +134,7 @@
     .header .nav__menu__list .nav__menu__item {
       color: black;
       text-decoration: none;
-      width: 6%;
+      width: 100%;
       height: 90%;
       margin-left: 6%;
       z-index: 1;
@@ -145,7 +145,7 @@
         background-color: white;
         border-radius: 4px;
         border-style: ridge;
-        border-color: #D28900;
+        border-color: #EE0865;
         box-shadow: 2px 2px 7px black;
         /* sublista con enlaces perfil*/ }
         .header .nav__menu__list .nav__menu__item .nav__menu__sublist .nav__menu__sublist__itemlink {
@@ -153,16 +153,16 @@
           background-color: white;
           border-radius: 4px;
           border-style: ridge;
-          border-color: #D28900;
+          border-color: #EE0865;
           font-size: 14px;
           margin: 5px 5px 5px 5px;
           text-decoration: none; }
     .header .nav__menu__list .nav__menu__item {
       color: black;
       text-decoration: none;
-      width: 6%;
+      width: 12%;
       height: 90%;
-      margin-left: 6%;
+      margin-left: 1%;
       z-index: 1;
       /* contenedor notificaciones*/ }
       .header .nav__menu__list .nav__menu__item .nav__menu2__sublist {
@@ -170,18 +170,17 @@
         background-color: white;
         border-radius: 4px;
         border-style: ridge;
-        border-color: #D28900;
+        border-color: #EE0865;
         font-size: 14px;
         width: 35vh;
         box-shadow: 2px 2px 7px black;
         /* lista 2 sin enlaces notificaciones*/ }
         .header .nav__menu__list .nav__menu__item .nav__menu2__sublist .nav__menu2__sublist__item {
-          width: 95%;
           color: black;
           background-color: white;
           border-radius: 4px;
           border-style: ridge;
-          border-color: #D28900;
+          border-color: #EE0865;
           font-size: 14px;
           margin: 5px 5px 5px 5px; }
 
@@ -214,7 +213,8 @@
 .footer {
   grid-area: footer;
   background-color: #DF6496;
-  width: 100%; }
+  width: 100%;
+  box-shadow: 2px 2px 7px black; }
   .footer .footer1 {
     width: 100%;
     max-width: 1200px;
@@ -262,12 +262,12 @@
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 10%;
-  border-color: #D28900;
+  border-color: #EE0865;
   border-radius: 0 0 8px 8px;
   box-shadow: 2px 2px 7px black;
-  border: 1px solid #D28900; }
+  border: 1px solid #EE0865; }
   .tabla .tabla__fila {
-    border: 1px solid #D28900;
+    border: 1px solid #EE0865;
     text-align: center; }
 
 /*INICIAR SESION*/
@@ -387,7 +387,7 @@
     margin-left: -300%; } }
 
 .hover:hover {
-  border: 1px solid #D28900;
+  border: 1px solid #EE0865;
   box-shadow: 2px 2px 7px black; }
 
 .nav__menu__list li a:hover {
@@ -465,8 +465,15 @@
     margin-top: 15px;
     margin-bottom: 5px;
     box-shadow: 2px 2px 7px black;
-    border-color: #D28900; }
+    border-color: #EE0865; }
   .description {
     font-size: 20px; }
   .description2 {
-    font-size: 20px; } }
+    font-size: 20px; }
+  .nav__menu__item:hover > .nav__menu2__sublist {
+    display: block; }
+  /*Aparece calendario*/
+  .nav__menu__itemlink:hover > .nav__menu__calendar {
+    display: block; }
+  .nav__menu__list li ul {
+    display: block; } }

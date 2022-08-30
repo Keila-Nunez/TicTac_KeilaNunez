@@ -84,4 +84,16 @@
     .description2{
         font-size: map-get($sizes, 20);
     }
+    .nav__menu__item:hover > .nav__menu2__sublist{
+        display: block;
+    }
+    
+    /*Aparece calendario*/
+    .nav__menu__itemlink:hover > .nav__menu__calendar{
+        display: block;
+    }
+    .nav__menu__list li ul{
+        display: block;   
+    }
+
 }
