@@ -47,13 +47,13 @@
 /* caja contenedora olvidaste contraseña, primera vez*/
 .box__nuevo{
     @include flex-direction-center (column);
-    padding-top: 5px;
     height: 90px;
+    margin-bottom: 105px;
     .box__recuperar{
-        @extend .box__nuevo;
         color: blue;
         font-family: map-get($estilos, fuente);
-        font-size: map-get($sizes, 12);
+        font-size: map-get($sizes, 16);
+        padding-bottom: 2px;
     }
 }
 

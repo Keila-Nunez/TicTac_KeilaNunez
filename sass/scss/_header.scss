@@ -151,6 +151,6 @@
 .header2{
     @include flex-row-start;
     width: 100%;
-    height: 250px;
+    height: 150px;
     background-color: map-get($colorPalette, primario);
 }

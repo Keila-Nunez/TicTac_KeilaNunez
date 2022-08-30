@@ -189,7 +189,7 @@
   justify-content: flex-start;
   align-items: flex-start;
   width: 100%;
-  height: 250px;
+  height: 150px;
   background-color: #DF6496; }
 
 .img {
@@ -296,17 +296,18 @@
   padding-top: 5px; }
 
 /* caja contenedora olvidaste contraseña, primera vez*/
-.box__nuevo, .box__nuevo .box__recuperar {
+.box__nuevo {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 5px;
-  height: 90px; }
+  height: 90px;
+  margin-bottom: 105px; }
   .box__nuevo .box__recuperar {
     color: blue;
     font-family: "Roboto Condensed";
-    font-size: 12px; }
+    font-size: 16px;
+    padding-bottom: 2px; }
 
 /* texto ingresar datos de registro*/
 .box__texto__recuperar {
