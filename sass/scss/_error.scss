@@ -1,0 +1,50 @@
+.container__general{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 200px;
+    .error{
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size:  map-get($sizes, 70);
+        display: flex;
+        flex-direction: row;
+        width: 10%;
+        height: auto;
+        justify-content: center;
+        text-align: center;
+    }
+    .container__logo2{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 12%;
+        .box__logo2{
+            display: flex;
+            flex-direction: row;
+        }
+    }
+       
+}
+ 
+.container__general2{
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .error2{
+        width: auto;
+        font-size: map-get($sizes, 20); 
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    .boton__error{
+        width: 100px;
+        background-color: map-get($colorPalette , secundario);
+        border-bottom: map-get($colorPalette , primario ) ;
+        border: map-get($colorPalette , primario );
+        border-radius: 4px;
+        margin-top: 10px;
+    }
+}
