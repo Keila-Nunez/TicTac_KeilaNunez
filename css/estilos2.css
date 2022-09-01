@@ -294,7 +294,7 @@
       font-size: 14px; }
   .footer .derechos {
     font-size: 12px;
-    margin-left: 44px; }
+    text-align: center; }
 
 /*DATOS PERSONALES*/
 .tabla {
@@ -496,8 +496,10 @@
     width: 15%;
     margin-left: 5px; }
   .box__logo2 {
-    width: 66px;
-    height: 76px; }
+    width: 54px;
+    height: 64px;
+    justify-content: center;
+    align-items: center; }
   .container__imgIndex {
     margin-top: 15px;
     margin-bottom: 5px;
