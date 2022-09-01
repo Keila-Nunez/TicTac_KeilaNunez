@@ -467,7 +467,7 @@
     position: absolute;
     margin-top: -12%; }
   .favoritos1 {
-    margin-left: 190px; }
+    margin-left: 155px; }
   .titulo {
     font-size: 26px; } }
 
@@ -488,7 +488,7 @@
     z-index: 1;
     margin-left: 4rem; }
   .favoritos1 {
-    margin-left: 335px; }
+    margin-left: 345px; }
   .navbar-toggler {
     position: absolute;
     margin-top: -26%; }
@@ -496,8 +496,8 @@
     width: 15%;
     margin-left: 5px; }
   .box__logo2 {
-    width: 86%;
-    height: 90%; }
+    width: 66px;
+    height: 76px; }
   .container__imgIndex {
     margin-top: 15px;
     margin-bottom: 5px;
