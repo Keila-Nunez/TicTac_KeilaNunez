@@ -1,6 +1,6 @@
 .titulo2{
     font-size: 32px;
-    margin-left: 50px;
+    text-align: center;
     margin-top: 20px;
 }
 
@@ -17,14 +17,14 @@
 .titulo3{
     font-size: 30px;
     font-family:  map-get($estilos, fuente);
-    margin-left: 170px;
     padding-top: 30px;
+    text-align: center;
 }
 
 .titulo4 {
     font-size: 24px;
     font-family:  map-get($estilos, fuente);
-    margin-left: 170px;
+    text-align: center;
 }
 
 .verMas{

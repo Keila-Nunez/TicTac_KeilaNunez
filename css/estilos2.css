@@ -368,7 +368,7 @@
 
 .titulo2 {
   font-size: 32px;
-  margin-left: 50px;
+  text-align: center;
   margin-top: 20px; }
 
 .titulo {
@@ -382,13 +382,13 @@
 .titulo3 {
   font-size: 30px;
   font-family: "Roboto Condensed";
-  margin-left: 170px;
-  padding-top: 30px; }
+  padding-top: 30px;
+  text-align: center; }
 
 .titulo4 {
   font-size: 24px;
   font-family: "Roboto Condensed";
-  margin-left: 170px; }
+  text-align: center; }
 
 .verMas {
   font-size: 18px;
@@ -488,7 +488,7 @@
     z-index: 1;
     margin-left: 4rem; }
   .favoritos1 {
-    margin-left: 255px; }
+    margin-left: 245px; }
   .navbar-toggler {
     position: absolute;
     margin-top: -26%; }
