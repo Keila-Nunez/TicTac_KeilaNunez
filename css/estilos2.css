@@ -86,10 +86,10 @@
         border-style: none;
         background-color: white;
         border-radius: 0 4px 4px 0px;
-        box-shadow: 2px 2px 7px black; }
-        .header .nav .nav__search .nav__search__button .lupa {
-          margin-top: 5px;
-          margin-left: 2px; }
+        box-shadow: 2px 2px 7px black;
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        content: "\f007"; }
   .header .nav__menu__list {
     color: black;
     margin-left: 30%;
@@ -322,7 +322,8 @@
   align-items: center;
   width: 100%;
   font-size: 30px;
-  padding-top: 25px; }
+  padding-top: 25px;
+  text-align: center; }
   .box__texto__bienvenida .box__logo {
     margin-left: 13px; }
 

@@ -51,10 +51,9 @@
                 background-color: white;
                 border-radius: 0 4px 4px 0px;
                 box-shadow: $sombra;
-                .lupa{
-                    margin-top: 5px;
-                    margin-left: 2px;
-                }   
+                font-family: "Font Awesome 5 Free"; 
+                font-weight: 900; 
+                content: "\f007";  
             } 
         }
     }
