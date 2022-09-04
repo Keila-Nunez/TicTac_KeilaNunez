@@ -277,19 +277,43 @@
       margin-bottom: 25px;
       font-size: 16px; }
     .footer .footer1 .container__redes {
-      width: 70%;
-      height: 100%; }
-      .footer .footer1 .container__redes .color {
+      width: 80%;
+      height: 100%;
+      display: flex;
+      flex-direction: column; }
+      .footer .footer1 .container__redes .colorI {
         display: inline-block;
         text-decoration: none;
-        width: 45px;
-        height: 45px;
-        font-size: 28px;
-        line-height: 45px;
+        width: 30px;
+        height: 30px;
+        font-size: 26px;
+        line-height: 30px;
         color: white;
-        margin-right: 10px;
         background-color: black;
-        text-align: center; }
+        text-align: center;
+        margin-left: 10px; }
+      .footer .footer1 .container__redes .colorL {
+        display: inline-block;
+        text-decoration: none;
+        width: 30px;
+        height: 30px;
+        font-size: 26px;
+        line-height: 30px;
+        color: white;
+        background-color: black;
+        text-align: center;
+        margin-left: 20px; }
+      .footer .footer1 .container__redes .colorW {
+        display: inline-block;
+        text-decoration: none;
+        width: 30px;
+        height: 30px;
+        font-size: 26px;
+        line-height: 30px;
+        color: white;
+        background-color: black;
+        text-align: center;
+        margin-left: 10px; }
     .footer .footer1 .nosotros__info {
       font-size: 14px; }
   .footer .derechos {
@@ -520,4 +544,6 @@
   .titulo2 {
     font-size: 24px; }
   .header .nav__menu__list {
-    margin-left: 20%; } }
+    margin-left: 20%; }
+  .container__redes .colorI {
+    font-size: 26px; } }
