@@ -251,10 +251,6 @@
   height: 100%;
   margin: auto; }
 
-.logof {
-  width: 100%;
-  height: auto; }
-
 .imgP {
   width: 100%;
   height: auto; }
@@ -281,6 +277,9 @@
       display: flex;
       justify-content: center;
       align-items: center; }
+      .footer .footer1 .footer1__img .logof {
+        width: 100%;
+        height: auto; }
     .footer .footer1 .nosotros {
       margin-bottom: 25px;
       font-size: 16px; }
