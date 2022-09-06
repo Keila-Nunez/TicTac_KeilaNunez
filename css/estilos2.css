@@ -13,9 +13,6 @@
   color: black;
   box-sizing: border-box; }
 
-.cuerpo {
-  background-color: #FFE3ED; }
-
 /*GRID*/
 .container__grid {
   display: grid;
@@ -242,6 +239,7 @@
     position: absolute;
     background-color: rgba(250, 168, 168, 0.4);
     font-family: "Roboto Condensed";
+    font-size: 28px;
     text-align: center;
     width: 100%; }
   .container__banner .imgR {
@@ -443,6 +441,7 @@
 .description {
   position: absolute;
   background-color: rgba(250, 168, 168, 0.4);
+  font-family: "Roboto Condensed";
   font-size: 30px;
   text-align: center;
   width: 100%; }
@@ -450,6 +449,7 @@
 .description2 {
   background-color: rgba(250, 168, 168, 0.4);
   font-size: 30px;
+  font-family: "Roboto Condensed";
   text-align: center;
   width: 100%;
   margin-top: 25px;

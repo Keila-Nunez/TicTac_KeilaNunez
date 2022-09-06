@@ -35,7 +35,8 @@
 
 .description{
     position: absolute;
-    background-color:rgba(250, 168, 168, 0.4); 
+    background-color:rgba(250, 168, 168, 0.4);
+    font-family: map-get($estilos, fuente); 
     font-size: map-get($sizes, 30);
     text-align: center;
     width: 100%;
@@ -44,6 +45,7 @@
 .description2{
     background-color:rgba(250, 168, 168, 0.4); 
     font-size: map-get($sizes, 30);
+    font-family: map-get($estilos, fuente);
     text-align: center;
     width: 100%;
     margin-top: 25px;
