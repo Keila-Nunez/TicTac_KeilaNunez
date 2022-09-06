@@ -249,10 +249,13 @@
 
 .img__carrusel {
   width: 100%;
-  height: auto;
-  margin: auto; }
+  height: auto; }
 
 .imgP {
+  width: 100%;
+  height: auto; }
+
+.imgR {
   width: 100%;
   height: auto; }
 
