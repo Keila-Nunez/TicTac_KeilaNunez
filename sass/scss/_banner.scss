@@ -1,0 +1,16 @@
+.container__banner{
+    width: 100%;
+    height: auto;
+    .description3{
+        position: absolute;
+        background-color:rgba(250, 168, 168, 0.4); 
+        font-family: map-get($estilos, fuente); 
+        font-size: map-get($sizes, 22);
+        text-align: center;
+        width: 100%;
+    }
+    .imgR{
+        width: 100%;
+        height: auto;
+    }
+}

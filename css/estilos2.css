@@ -235,6 +235,19 @@
     border-radius: 4px;
     margin-top: 10px; }
 
+.container__banner {
+  width: 100%;
+  height: auto; }
+  .container__banner .description3 {
+    position: absolute;
+    background-color: rgba(250, 168, 168, 0.4);
+    font-family: "Roboto Condensed";
+    text-align: center;
+    width: 100%; }
+  .container__banner .imgR {
+    width: 100%;
+    height: auto; }
+
 .img {
   width: 80%;
   height: 300px; }
@@ -252,10 +265,6 @@
   height: auto; }
 
 .imgP {
-  width: 100%;
-  height: auto; }
-
-.imgR {
   width: 100%;
   height: auto; }
 
@@ -505,7 +514,9 @@
   .favoritos1 {
     margin-left: 155px; }
   .titulo {
-    font-size: 26px; } }
+    font-size: 26px; }
+  .description3 {
+    font-size: 20px; } }
 
 /*MOBILE*/
 @media screen and (max-width: 769px) {
@@ -544,6 +555,8 @@
   .description {
     font-size: 20px; }
   .description2 {
+    font-size: 20px; }
+  .description3 {
     font-size: 20px; }
   .nav__menu__item:hover > .nav__menu2__sublist {
     display: block; }
