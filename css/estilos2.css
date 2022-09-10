@@ -1,12 +1,5 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto:wght@100;400&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto:wght@100;400&display=swap");
-* {
-  margin: 0;
-  padding: 0;
-  color: black;
-  box-sizing: border-box; }
-
 * {
   margin: 0;
   padding: 0;
@@ -515,7 +508,7 @@
     margin-left: 155px; }
   .titulo {
     font-size: 26px; }
-  .description3 {
+  .container__banner .description3 {
     font-size: 20px; } }
 
 /*MOBILE*/
@@ -556,7 +549,7 @@
     font-size: 20px; }
   .description2 {
     font-size: 20px; }
-  .description3 {
+  .container__banner .description3 {
     font-size: 20px; }
   .nav__menu__item:hover > .nav__menu2__sublist {
     display: block; }

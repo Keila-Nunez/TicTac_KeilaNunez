@@ -33,7 +33,7 @@
     .titulo {
         font-size: 26px;
     }
-    .description3{
+    .container__banner .description3{
         font-size: map-get($sizes, 20);
     }
 }
@@ -93,7 +93,7 @@
     .description2{
         font-size: map-get($sizes, 20);
     }
-    .description3{
+    .container__banner .description3{
         font-size: map-get($sizes, 20);
     }
     .nav__menu__item:hover > .nav__menu2__sublist{
