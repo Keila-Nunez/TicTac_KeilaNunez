@@ -7,7 +7,6 @@
     <meta name="description" content="Registro de datos personales para la creación de cuenta en TicTac Beauty">
     <meta name="keywords"  content=" turno, centro de estética, belleza, servicios, solicitud de turnos">
     <link rel="icon" type="image" href="../multimedia/images/icon.png"/>
-    <link rel="icon" type="image" href="../images/icon.png"/>
     <link rel="stylesheet" href="../css/estilos2.css">
     <link href="../css/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
     <link rel="stylesheet" href="../css/fontawesome-free-6.1.2-web/css/all.min.css"> 
@@ -21,25 +20,25 @@
     <main>
         <section class="w-75 m-auto">
             <div class="">
-                <form>
+                <form id="formReg">
                     <h1 class="titulo2">Ingresar datos de registro</h1> 
                     <div class="d-grid gap-2 col-lg-6 col-md-3 col-sm-3 mx-auto  pt-5 ">
-                        <input type="name" class="form-control border border-warning hover" id="inputPassword2" placeholder="Nombre" required>
+                        <input type="name" class="form-control border border-warning hover" id="nombreReg" placeholder="Nombre" required>
                     </div>
                     <div class="d-grid gap-2 col-lg-6 col-md-3 col-sm-3 mx-auto  pt-3 ">
-                        <input type="name" class="form-control border border-warning hover" id="inputPassword2" placeholder="Apellido" required>
+                        <input type="name" class="form-control border border-warning hover" id="apellidoReg" placeholder="Apellido" required>
                     </div>
                     <div class="d-grid gap-2 col-lg-6 col-md-3 col-sm-3 mx-auto  pt-3 ">
-                        <input type="phone" class="form-control border border-warning hover" id="inputPassword2" placeholder="Teléfono" required>
+                        <input type="phone" class="form-control border border-warning hover" id="telefonoReg" placeholder="Teléfono" required>
                     </div>
                     <div class="d-grid gap-2 col-lg-6 col-md-3 col-sm-3 mx-auto pt-3 ">
-                        <input type="email" class="form-control border border-warning hover" id="exampleFormControlInput1" placeholder="E-mail" required>
+                        <input type="email" class="form-control border border-warning hover" id="correoReg" placeholder="E-mail" required>
                     </div>
                     <div class="d-grid gap-2 col-lg-6 col-md-3 col-sm-3 mx-auto  pt-3 ">
-                        <input type="password" class="form-control border border-warning hover" id="inputPassword2" placeholder="Contraseña" required>
+                        <input type="password" class="form-control border border-warning hover" id="password1Reg" placeholder="Contraseña" required>
                     </div>
                     <div class="d-grid gap-2 col-lg-6 col-md-3 col-sm-3 mx-auto  pt-3 ">
-                        <input type="password" class="form-control border border-warning hover" id="inputPassword2" placeholder="Repetir contraseña" required>
+                        <input type="password" class="form-control border border-warning hover" id="password2Reg" placeholder="Repetir contraseña" required>
                     </div>
                     <div class="d-grid gap-2 col-lg-6 col-md-3 col-sm-3 mx-auto pt-5 pb-5">
                             <a href="../index.html"><button class="btn btn-success w-100 hover" type="submit">Crear cuenta</button></a>
@@ -77,6 +76,7 @@
         </div>
     </footer>
     <!-- FIN DE FOOTER -->
+    <script src="../scripts/registro.js"></script>
     <script src="../css/bootstrap/js/bootstrap.min.js"></script>
 </body>
 </html>

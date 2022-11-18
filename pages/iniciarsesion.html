@@ -7,7 +7,6 @@
     <meta name="description" content="Inicio de sesión TicTac Beauty">
     <meta name="keywords"  content=" turno, centro de estética, belleza, servicios, solicitud de turnos">
     <link rel="icon" type="image" href="../multimedia/images/icon.png"/>
-    <link rel="icon" type="image" href="../images/icon.png"/>
     <link rel="stylesheet" href="../css/estilos2.css">
     <link href="../css/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
     <link rel="stylesheet" href="../css/fontawesome-free-6.1.2-web/css/all.min.css"> 
@@ -21,16 +20,16 @@
     <main>
         <section class="w-75 m-auto">
             <div class=" ">
-                <form>
+                <form id="form">
                     <div class="box__texto">     
                         <h1 class="box__texto__bienvenida">Bienvenid <img class="box__logo" src="../multimedia/images/logoreloj.png" alt="logo reloj girando"></h1> 
                         <h2 class="box__texto__tictac" >TicTac Beauty te la bienvenida <br> Inicia sesión o regístrate si es tu primera vez.</h2> 
                     </div>
                     <div class="d-grid gap-2 col-lg-6 col-md-3 col-sm mx-auto pt-3 ">
-                        <input type="email" class="form-control border border-warning hover " id="exampleFormControlInput1" placeholder="E-mail" required>
+                        <input type="email" class="form-control border border-warning hover " id="email" placeholder="E-mail" required>
                     </div>
                     <div class="d-grid gap-2 col-lg-6 col-md-3 col-sm mx-auto  pt-3 ">
-                        <input type="password" class="form-control border border-warning hover" id="inputPassword2" placeholder="Contraseña" required>
+                        <input type="password" class="form-control border border-warning hover" id="password" placeholder="Contraseña" required>
                     </div>
                     <div class="d-grid gap-2 col-lg-6 col-md-3 col-sm mx-auto pt-3 pb-2">
                             <a href="../index.html"><button class="btn btn-success w-100 boton hover" type="submit">Ingresar</button></a>
@@ -72,6 +71,7 @@
         </div>
     </footer>
     <!-- FIN DE FOOTER -->
+    <script src="../scripts/inicio.js"></script>
     <script src="../css/bootstrap/js/bootstrap.min.js"></script>
 </body>
 </html>
