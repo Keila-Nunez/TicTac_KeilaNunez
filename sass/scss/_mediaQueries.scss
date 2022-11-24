@@ -28,13 +28,20 @@
         margin-top: -12%;  
     } 
     .favoritos1{
-        margin-left: 155px;
+        margin-left: 105px;
     }
     .titulo {
         font-size: 26px;
     }
     .container__banner .description3{
         font-size: map-get($sizes, 20);
+    }
+    .contenedor__servicios{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .servicio__imagen{
+        height: auto;
     }
 }
     
@@ -124,5 +131,16 @@
     .footer .footer1 .container__redes .colorW{
         margin-left: 18px;
 
+    }
+    .contenedor__servicios{
+        display: grid;
+        grid-template-columns: repeat(1);
+    }
+    .menu__servicios {
+        display: flex;
+        flex-direction: column;
+    }
+    .servicio__imagen{
+        height: auto;
     }
 }

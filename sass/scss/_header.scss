@@ -60,10 +60,9 @@
     /*MENU HEADER*/
     .nav__menu__list{
         color: black;
-        margin-left: 30% ;
+        margin-left: 25% ;
         /* lista 1 con enlaces*/
         .nav__menu__itemlink{
-            color: black;
             text-decoration: none;  
             display: block;
             font-size: map-get($sizes, 16);
@@ -100,10 +99,10 @@
         .nav__menu__item{
             color: black;
             text-decoration: none;
-            width: 100%;
             height: 90%;
-            margin-left: 6%;
             z-index: 1;
+            padding-right: 5%;
+            width: 5%;
             /* contenedor sublista 1*/
             .nav__menu__sublist{
                 width:35vh;
@@ -123,10 +122,15 @@
         .nav__menu__item{
             color: black;
             text-decoration: none;
-            width: 12%;
+            width: 19%;
             height: 90%;
-            margin-left: 1%;
             z-index: 1;
+            .nav__menu__item__perfil{
+                margin-left: 13%;
+                width: 100%;
+                
+            }
+            
             /* contenedor notificaciones*/
             .nav__menu2__sublist{
                 @include menuList;
@@ -134,7 +138,6 @@
                 font-size: map-get($sizes, 16);  
                 width: 35vh;
                 box-shadow: $sombra;
-
                 /* lista 2 sin enlaces notificaciones*/
                 .nav__menu2__sublist__item{
                     @include menuList;
@@ -152,4 +155,9 @@
     width: 100%;
     height: 150px;
     background-color: map-get($colorPalette, primario);
+}
+
+.menu__notificaciones{
+
+    width: 100%;
 }

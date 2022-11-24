@@ -9,7 +9,8 @@
     <link rel="icon" type="image" href="./multimedia/images/icon.png"/>
     <link rel="stylesheet" href="./css/estilos2.css"> 
     <link href="./css/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>   
-    <link rel="stylesheet" href="./css/fontawesome-free-6.1.2-web/css/all.min.css">  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/fontawesome-free-6.1.2-web/css/all.min.css"> 
     <title>TicTac Beauty</title>  
 </head>
 <body class="container__grid">
@@ -19,11 +20,11 @@
             <div class="box__caja">
                 <a  href="./index.html"> <img class="box__caja__logo" src="./multimedia/images/logol.png" loading="lazy" alt="logo TicTac Beauty"> </a>
             </div>
-            <form class="nav__search" action=""> 
-                <input class="nav__search__input" type="search" name="sacarturno" placeholder="Sacar tuno por servicio, centro o localidad..."> 
-                <div>
-                    <a href="./pages/error.html"><button type="button" title="botón de búsqueda" class="nav__search__button"><i class="fa-light fa-magnifying-glass pt-2 p-1"></i></a>
-                </div>
+            <form id="formSearch" class="nav__search" action=""> 
+                <input id="barra" class="nav__search__input" type="search" name="sacarturno" placeholder="Sacar tuno por servicio, centro o localidad..."> 
+            <div>
+                <a href="./pages/error.html"><button type="button" id="boton-search" title="botón de búsqueda" class="nav__search__button"><i class="fa-light fa-magnifying-glass pt-2 p-1"></i></a>
+            </div>
                 
             </form>
         </nav>
@@ -39,7 +40,7 @@
                             <a class="nav-link text-dark" aria-current="page" href="./pages/historial.html">Historial</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" href="./pages/favoritos.html">Favoritos</a>
+                            <a id="favoritos" class="nav-link text-dark" href="./pages/favoritos.html">Favoritos</a>
                         </li>
                         <li class="nav-item ">
                             <a class="nav-link text-dark" href="./pages/recomendaciones.html">Recomendaciones</a>
@@ -86,7 +87,7 @@
                             </ul>
                         </li>
                         <li class="nav-item nav__menu__item">
-                            <a class="nav-link text-dark">Perfil</a>
+                            <a class="nav-link text-dark nav__menu__item__perfil"><img src="./multimedia/images/perfil.png" alt=""> Perfil</a>
                             <ul class="nav__menu__sublist navbar-nav me-auto mb-2 mb-lg-0"> 
                                 <li class="nav__menu__sublist__itemlink text-dark ">Hola Luna</li>
                                 <li class="nav__menu__sublist__itemlink"><a class="text-dark text-decoration-none" href="./pages/datospersonales.html">Datos personales</a></li> 
@@ -94,13 +95,18 @@
                             </ul> 
                         </li>
                         <li class="nav-item nav__menu__item">
-                            <a class="nav-link text-dark">Notificaciones</a>
+                            <a class="nav-link text-dark menu__notificaciones"><img src="./multimedia/images/notificaciones.png" alt=""> Notificaciones</a>
                             <ul class="nav__menu2__sublist navbar-nav me-auto mb-2 mb-lg-0" > 
                                 <a href="./pages/error.html"><li class="nav__menu2__sublist__item">Tienes un turno agendado</li></a>
                                 <a href="./pages/error.html"><li class="nav__menu2__sublist__item">Tienes un turno agendado</li></a>
                                 <a href="./pages/error.html"><li class="nav__menu2__sublist__item">Tienes un turno agendado</li></a>
                                 <a href="./pages/error.html"><li class="nav__menu2__sublist__item">Tienes un turno agendado</li></a>   
                             </ul> 
+                        </li>
+                        <li class="container__carrito">
+                            <a class="boton-menu boton__carrito" href="./carrito.html">
+                                <i class="bi bi-cart-fill"></i> Carrito <span id="numerito" class="numerito">0</span>
+                            </a>
                         </li>
                     </ul>
                 </div>
@@ -142,12 +148,29 @@
             </button>
         </div>
         <!-- FIN DE CARRUSEL-->
+
+        <ul class="menu__servicios">
+            <li>
+                <button id="todos" class=" boton-menu boton__categoria active"><i class=" bi bi-hand-index-thumb-fill"></i> Todos los servicios</button>
+            </li>
+            <li>
+                <button id="cejasYpestanias" class="boton-menu boton__categoria active"><i class="bi bi-hand-index-thumb"></i> Cejas y pestañas</button>
+            </li>
+            <li>
+                <button id="faciales" class="boton-menu boton__categoria active"><i class="bi bi-hand-index-thumb"></i> Faciales</button>
+            </li>
+            <li>
+                <button id="depilacion" class="boton-menu boton__categoria active"><i class="bi bi-hand-index-thumb"></i> Depilación</button>
+            </li>
+            <li>
+                <button id="unias" class="boton-menu boton__categoria active"><i class="bi bi-hand-index-thumb"></i> Uñas</button>
+            </li>
+            
+        </ul>
         <!-- INICIO SECTION 1 -->
-        <section class="container w-60">
-            <div class="row pt-2 pb-2">
-                <div class="tex-center pt-5">
-                    <h3 class="titulo">Visto recientemente</h3>
-                </div>
+        <h2 class="titulo-principal titulo container-fluid" id="titulo-principal">Todos los productos</h2>
+        <section id="contenedor-servicios" class=" contenedor__servicios container">
+          <!--  <div class="row pt-2 pb-2 ">
                 <div class="col-lg-3 col-md-6 col-sm-12 pt-2 pb-5 ">
                     <div class="card h-80 hover container__imgIndex">
                         <img class="card-img-top d-lg-block d-md-block d-sm-none d-none imgG"
@@ -160,177 +183,14 @@
                             <a href="./pages/historial.html"><h4 class="d-lg-none d-md-none d-sm-block d-block verMas">Ver más</h4></a>
                             <h4 class="d-lg-block d-md-block d-sm-none d-none card-title servicio">Microshading</h4>
                             <p class="d-lg-block d-md-block d-sm-none d-none card-text">$ 18.800 <img class="favoritos1" src="./multimedia/images/inactivo.png" alt="corazón"></p>
+                            <button class="agregar__servicio">Agregar</button>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-sm-12 pt-2 pb-5 d-lg-block d-md-block d-sm-none d-none">
-                    <div class="card h-80 hover">
-                        <img class="card-img-top d-lg-block d-md-block d-sm-none d-none imgG"
-                            srcset="./multimedia/images/liftinghombrem.jpg 560w,
-                                    ./multimedia/images/liftinghombret.jpg 600w,
-                                    ./multimedia/images/liftinghombre.jpg 1080w" loading="lazy"
-                            src="./multimedia/images/liftinghombre.jpg 1080w" loading="lazy" alt="pestañas de hombre"> 
-                        <div class="card-body imgG">
-                            <h4 class="card-title servicio">Lifting de pestañas</h4>
-                            <p class="card-text">$ 2.800 <img class="favoritos1" src="./multimedia/images/inactivo.png" loading="lazy" alt="corazón"></p>
-                        </div>
-                    </div>
-                </div> 
-                <div class="col-lg-3 col-md-6 col-sm-12 pt-2 pb-5 d-lg-block d-md-block d-sm-none d-none">
-                    <div class="card h-80 hover">
-                        <img class="card-img-top d-lg-block d-md-block d-sm-none d-none imgG" 
-                            srcset="./multimedia/images/liftingdepestanasm.jpg 560w,
-                                    ./multimedia/images/liftingdepestanast.jpg 600w,
-                                    ./multimedia/images/liftingdepestanas.jpg 1080w" loading="lazy"
-                            src="./multimedia/images/liftingdepestanas.jpg 1080w" loading="lazy" alt="pestañas de mujer"> 
-                        <div class="card-body imgG">
-                            <h4 class="card-title servicio">Lifting nutritivo</h4>
-                            <p class="card-text">$ 2.800 <img class="favoritos1" src="./multimedia/images/inactivo.png" alt="corazón"></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-12 pt-2 pb-5 d-lg-block d-md-block d-sm-none d-none">
-                    <div class="card h-80 hover">
-                        <img class="card-img-top d-lg-block d-md-block d-sm-none d-none imgG"
-                            srcset="./multimedia/images/laminadom.jpg 560w,
-                                    ./multimedia/images/laminadot.jpg 600w,
-                                    ./multimedia/images/laminado.jpg 1080w" loading="lazy"
-                            src="./multimedia/images/laminado.jpg 1080w" loading="lazy" alt="pestañas y ceja de mujer"> 
-                        <div class="card-body imgG">
-                            <h4 class="card-title servicio">Laminado y perfilado de cejas</h4>
-                            <p class="card-text">$ 2.500 <img class="favoritos1" src="./multimedia/images/inactivo.png" alt="corazón"></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            </div>-->
         </section>
         <!-- FIN SECTION 1 -->
-        <!-- INICIO SECTION 2 -->
-        <section class="container w-60">
-            <div class="row pt-2 pb-2">
-                <div class="tex-center pt-5">
-                    <h3 class="titulo">Inspirado en tus favoritos</h3>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-12 pt-2 pb-5">
-                    <div class="card h-80 hover container__imgIndex">
-                        <img class="card-img-top d-lg-block d-md-block d-sm-none d-none imgG"
-                            srcset="./multimedia/images/mascarillam.jpg 560w,
-                                    ./multimedia/images/mascarillat.jpg 600w,
-                                    ./multimedia/images/mascarilla.jpg 1080w" loading="lazy"
-                            src="./multimedia/images/mascarilla.jpg 1080w" loading="lazy" alt="rostro de mujer con mascarilla"> 
-                        <img src="./multimedia/images/beautynails.jpg" class="card-img-top d-lg-none d-md-none d-sm-block d-block imgIndex" alt="manos de mujer sosteniendo un corazón rosa">
-                        <div class="card-body imgG">
-                            <a href="./pages/favoritos.html"><h4 class="d-lg-none d-md-none d-sm-block d-block verMas">Ver más</h4></a>
-                            <h4 class="d-lg-block d-md-block d-sm-none d-none card-title servicio">Tratamiento Anti-Ojeras</h4>
-                            <p class="d-lg-block d-md-block d-sm-none d-none card-text">$ 3.200<img class="favoritos1" src="./multimedia/images/inactivo.png" alt="corazón"></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-12 pt-2 pb-5 d-lg-block d-md-block d-sm-none d-none">
-                    <div class="card h-80 hover">
-                        <img class="card-img-top d-lg-block d-md-block d-sm-none d-none imgG"
-                            srcset="./multimedia/images/limpiezadecutism.jpg 560w,
-                                    ./multimedia/images/limpiezadecutist.jpg 600w,
-                                    ./multimedia/images/limpiezadecutis.jpg 1080w" loading="lazy"
-                            src="./multimedia/images/limpiezadecutis.jpg 1080w" loading="lazy" alt="rostro natural de hombre"> 
-                        <div class="card-body imgG">
-                            <h4 class="card-title servicio">Limpieza de cutis</h4>
-                            <p class="card-text">$ 3.800 <img class="favoritos1" src="./multimedia/images/inactivo.png" alt="corazón"></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-12 pt-2 pb-5 d-lg-block d-md-block d-sm-none d-none">
-                    <div class="card h-80 hover">
-                        <img class="card-img-top d-lg-block d-md-block d-sm-none d-none imgG"
-                            srcset="./multimedia/images/radiofrecuenciafacialm.jpg 560w,
-                                    ./multimedia/images/radiofrecuenciafacialt.jpg 600w,
-                                    ./multimedia/images/radiofrecuenciafacial.jpg 1080w" loading="lazy"
-                            src="./multimedia/images/radiofrecuenciafacial.jpg 1080w" loading="lazy" alt="rostro natural de mujer"> 
-                        <div class="card-body imgG">
-                            <h4 class="card-title servicio">Radiofrecuencia facial</h4>
-                            <p class="card-text">$ 4.000 <img class="favoritos1" src="./multimedia/images/inactivo.png" alt="corazón"></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-12 pt-2 pb-5 d-lg-block d-md-block d-sm-none d-none">
-                    <div class="card h-80 hover">
-                        <img class="card-img-top d-lg-block d-md-block d-sm-none d-none imgG"
-                            srcset="./multimedia/images/electroporacionm.jpg 560w,
-                                    ./multimedia/images/electroporaciont.jpg 600w,
-                                    ./multimedia/images/electroporacion.jpg 1080w" loading="lazy"
-                            src="./multimedia/images/electroporacion.jpg 1080w" loading="lazy" alt="rostro de mujer con tratamiento de aparatología"> 
-                        <div class="card-body imgG">
-                            <h4 class="card-title servicio">Electroporación</h4>
-                            <p class="card-text">$ 3.200 <img class="favoritos1" src="./multimedia/images/inactivo.png" alt="corazón"></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- FIN SECTION 2 -->
-        <!-- INICIO SECTION 3 -->
-        <section class="container w-60">
-            <div class="row pt-2 pb-2">
-                <div class="tex-center pt-5">
-                    <h3 class="titulo">Basado en tu última reserva</h3>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-12 pt-2 pb-5">
-                    <div class="card h-80 hover container__imgIndex">
-                        <img class="card-img-top d-lg-block d-md-block d-sm-none d-none imgG"
-                            srcset="./multimedia/images/zonaparahombresm.jpg 560w,
-                                    ./multimedia/images/zonaparahombrest.jpg 600w,
-                                    ./multimedia/images/zonaparahombres.jpg 1080w" loading="lazy"
-                            src="./multimedia/images/zonaparahombres.jpg 1080w" loading="lazy" alt="medio cuerpo de hombre de perfil"> 
-                        <img src="./multimedia/images/recomendaciones.jpg" class="card-img-top d-lg-none d-md-none d-sm-block d-block imgIndex" alt="medio rostro de mujer con mano tapando su boca">
-                        <div class="card-body imgG">
-                            <a href="./pages/recomendaciones.html"><h4 class="d-lg-none d-md-none d-sm-block d-block verMas">Ver más</h4></a>
-                            <h4 class="d-lg-block d-md-block d-sm-none d-none card-title servicio">Espalda completa</h4>
-                            <p class="d-lg-block d-md-block d-sm-none d-none card-text">$ 90.671 <img class="favoritos1" src="./multimedia/images/inactivo.png" alt="corazón"></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-12 pt-2 pb-5 d-lg-block d-md-block d-sm-none d-none">
-                    <div class="card h-80 hover">
-                        <img class="card-img-top d-lg-block d-md-block d-sm-none d-none imgG"
-                            srcset="./multimedia/images/piernasm.jpg 560w,
-                                    ./multimedia/images/piernast.jpg 600w,
-                                    ./multimedia/images/piernas.jpg 1080w" loading="lazy"
-                            src="./multimedia/images/piernas.jpg 1080w" loading="lazy" alt="piernas de mujer">
-                        <div class="card-body imgG">
-                            <h4 class="card-title servicio">Piernas enteras</h4>
-                            <p class="card-text">$107.429 <img class="favoritos1" src="./multimedia/images/inactivo.png" alt="corazón"></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-12 pt-2 pb-5 d-lg-block d-md-block d-sm-none d-none">
-                    <div class="card h-80 hover">
-                        <img class="card-img-top d-lg-block d-md-block d-sm-none d-none imgG"
-                            srcset="./multimedia/images/cavadom.jpg 560w,
-                                    ./multimedia/images/cavadot.jpg 600w,
-                                    ./multimedia/images/cavado.jpg 1080w" loading="lazy"
-                            src="./multimedia/images/cavado.jpg 1080w" loading="lazy" alt="piernas de mujer">
-                        <div class="card-body imgG">
-                            <h4 class="card-title servicio">Cavado</h4>
-                            <p class="card-text">$ 34.365 <img class="favoritos1" src="./multimedia/images/inactivo.png" alt="corazón"></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-12 pt-2 pb-5 d-lg-block d-md-block d-sm-none d-none">
-                    <div class="card h-80 hover">
-                        <img class="card-img-top d-lg-block d-md-block d-sm-none d-none imgG"
-                            srcset="./multimedia/images/bozom.jpg 560w,
-                                    ./multimedia/images/bozot.jpg 600w,
-                                    ./multimedia/images/bozo.jpg 1080w" loading="lazy"
-                            src="./multimedia/images/bozo.jpg 1080w" loading="lazy" alt="bozo de mujer">
-                        <div class="card-body imgG">
-                            <h4 class="card-title servicio">Bozo</h4>
-                            <p class="card-text">$ 17.390 <img class="favoritos1" src="./multimedia/images/inactivo.png" alt="corazón"></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- FIN SECTION 3 -->    
+           
     </main>
     <!-- INICIO DE FOOTER -->
     <footer class="footer"> 
@@ -361,6 +221,8 @@
         </div>
     </footer>
     <!-- FIN DE FOOTER -->
+    <script src="./scripts/servicios.js"></script>
+    <script src="./scripts/carrito.js"></script>
     <script src="./css/bootstrap/js/bootstrap.min.js"></script>
 </body>
 </html>

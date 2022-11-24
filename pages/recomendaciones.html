@@ -9,6 +9,7 @@
     <link rel="icon" type="image" href="../multimedia/images/icon.png"/>
     <link rel="stylesheet" href="../css/estilos2.css">
     <link href="../css/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="../css/fontawesome-free-6.1.2-web/css/all.min.css"> 
     <title>Recomendaciones</title>
 </head>
@@ -33,13 +34,10 @@
             <div class="collapse navbar-collapse" id="navbarText">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-75 mx-25 nav__menu__list">
                     <li class="nav-item ">
-                        <a class="nav-link text-dark d-lg-none d-md-none d-sm-block d-block" aria-current="page" href="../index.html">Inicio</a>
-                    </li>
-                    <li class="nav-item ">
                         <a class="nav-link text-dark" aria-current="page" href="../pages/historial.html">Historial</a>
                     </li>
-                    <li class="nav-item ">
-                        <a class="nav-link text-dark" href="../pages/favoritos.html">Favoritos</a>
+                    <li class="nav-item">
+                        <a id="favoritos" class="nav-link text-dark" href="../pages/favoritos.html">Favoritos</a>
                     </li>
                     <li class="nav-item ">
                         <a class="nav-link text-dark" href="../pages/recomendaciones.html">Recomendaciones</a>
@@ -86,21 +84,26 @@
                         </ul>
                     </li>
                     <li class="nav-item nav__menu__item">
-                        <a class="nav-link text-dark">Perfil</a>
+                        <a class="nav-link text-dark nav__menu__item__perfil"><img src="../multimedia/images/perfil.png" alt=""> Perfil</a>
                         <ul class="nav__menu__sublist navbar-nav me-auto mb-2 mb-lg-0"> 
                             <li class="nav__menu__sublist__itemlink text-dark ">Hola Luna</li>
-                            <li class="nav__menu__sublist__itemlink text-dark"><a class="text-dark text-decoration-none" href="../pages/datospersonales.html">Datos personales</a></li> 
-                            <li class="nav__menu__sublist__itemlink text-dark "><a class="text-dark text-decoration-none" href="../pages/iniciarsesion.html">Salir</a></li>
+                            <li class="nav__menu__sublist__itemlink"><a class="text-dark text-decoration-none" href="../pages/datospersonales.html">Datos personales</a></li> 
+                            <li class="nav__menu__sublist__itemlink"><a class="text-dark text-decoration-none" href="../pages/iniciarsesion.html">Salir</a></li>
                         </ul> 
                     </li>
                     <li class="nav-item nav__menu__item">
-                        <a class="nav-link text-dark">Notificaciones</a>
+                        <a class="nav-link text-dark"><img src="../multimedia/images/notificaciones.png" alt=""> Notificaciones</a>
                         <ul class="nav__menu2__sublist navbar-nav me-auto mb-2 mb-lg-0" > 
-                            <a href="../pages/error.html"><li class="nav__menu2__sublist__item">Tienes un turno agendado</li></a>  
                             <a href="../pages/error.html"><li class="nav__menu2__sublist__item">Tienes un turno agendado</li></a>
                             <a href="../pages/error.html"><li class="nav__menu2__sublist__item">Tienes un turno agendado</li></a>
                             <a href="../pages/error.html"><li class="nav__menu2__sublist__item">Tienes un turno agendado</li></a>
+                            <a href="../pages/error.html"><li class="nav__menu2__sublist__item">Tienes un turno agendado</li></a>   
                         </ul> 
+                    </li>
+                    <li class="container__carrito">
+                        <a class="boton-menu boton__carrito" href="../carrito.html">
+                            <i class="bi bi-cart-fill"></i> Carrito <span id="numerito" class=""></span>
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -284,7 +287,7 @@
                             src="../multimedia/images/manosrosa.jpg 1080w" loading="lazy" alt="manos de mujer con uñas pintadas">
                         <div class="card-body imgG">
                             <h3 class="card-title servicio">Esmalte semipermanente</h3>
-                            <p class="card-text">$ Precio <img class="favoritos1" src="../multimedia/images/inactivo.png" alt="corazón"></p>
+                            <p class="card-text">$ 1800 <img class="favoritos1" src="../multimedia/images/inactivo.png" alt="corazón"></p>
                         </div>
                     </div>
                 </div>
@@ -321,6 +324,8 @@
         </div>
     </footer>
     <!-- FIN DE FOOTER -->
+    <script src="../scripts/servicios.js"></script>
+    <script src="../scripts/carrito.js"></script>
     <script src="../css/bootstrap/js/bootstrap.min.js"></script>
 </body>
 </html>

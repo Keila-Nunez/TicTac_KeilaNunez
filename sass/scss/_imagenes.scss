@@ -4,7 +4,22 @@
 }
 
 .favoritos1{
-    margin-left: 130px;
+    width: 25px;
+    color: gray;
+    background-color: white ;
+    
+}
+
+.favoritos2{
+    
+    color: map-get($colorPalette, secundario);
+    
+}
+
+.corazon{
+    margin-left: 145px;
+    border: transparent;
+
 }
 //Imágenes index mobile
 .imgIndex{
@@ -21,4 +36,8 @@
 .imgP{
     width: 100%;
     height: auto;
+}
+
+.titulooo{
+    color: brown;
 }
