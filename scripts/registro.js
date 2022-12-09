@@ -19,6 +19,7 @@ formRegInput.onsubmit = (contexto) => {
         let usuarios = [];
         usuarios.push({ email: email, pass: pass, name: name, surname: surname, phone: phone });
         localStorage.setItem("usuarios", JSON.stringify(usuarios));
+        localStorage.setItem('LOGIN', 'SI');
         location.href = "../index.html";  
     }else{
         let verificarUsuario = JSON.parse(localStorage.getItem("usuarios"));
@@ -33,6 +34,7 @@ formRegInput.onsubmit = (contexto) => {
             usuarios.push({ email: email, pass: pass, name: name, surname: surname, phone: phone });
             localStorage.setItem("usuarios", JSON.stringify(usuarios));
             Swal.fire('El usuario fue agregado exitosamente')
+            localStorage.setItem('LOGIN', 'SI');
             location.href = "../index.html"
         };
     }

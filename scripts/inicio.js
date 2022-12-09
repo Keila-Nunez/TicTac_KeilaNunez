@@ -1,5 +1,4 @@
 let usuarios = [];
-
 let formInput = document.getElementById("form");
 let passInput = document.getElementById("password");
 let emailInput = document.getElementById("email");
