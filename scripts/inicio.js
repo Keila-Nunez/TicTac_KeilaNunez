@@ -14,14 +14,28 @@ formInput.onsubmit = (contexto) => {
         return elemento.email == email && elemento.pass == pass;
     });
     if (resultado) {
-        alert("Usuario logueado");
+        localStorage.setItem('LOGIN', 'SI'); 
         location.href = "../index.html";
     } else {
         resultado = usuarios.some((elemento) => {
             return elemento.email == email;
         });
         resultado
-            ? alert("Contraseña incorrecta")
-            : alert("Usuario inexistente, para su registro diríjase a la opción: ¿Primera vez?");
+
+            ? Swal.fire('Contraseña incorrecta')
+            : Swal.fire({
+                icon: 'error',
+                title: 'Usuario inexistente, para su registro diríjase a la opción: ¿Primera vez? o  <a href="../pages/registro.html">haga click aquí</a>',
+              })
     }
 }; 
+
+
+/*if(localStorage.getItem('LOGIN') == null || localStorage.getItem('LOGIN') == 'NO'){ 
+    console.log('no esta logeado lo envio a la pagina de logueo');
+    //ACA VA LA REDIRECCION A LA PAGINA
+}
+
+
+//LUEGO DE QUE SE LOGUEE CREAS LA VARIABLE CON   localStorage.setItem('LOGIN', 'SI');  
+//Y CADA VES QUE TE SALGAS ES DECIR LO QUIERES DESLOGUEAR CAMBIAS EL ESTADO A localStorage.setItem('LOGIN', 'NO');*/

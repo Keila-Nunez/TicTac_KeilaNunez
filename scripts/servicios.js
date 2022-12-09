@@ -1,3 +1,18 @@
+/*if(localStorage.getItem('LOGIN') == null || localStorage.getItem('LOGIN') == 'NO'){ 
+    location.href = "../pages/iniciarsesion.html";
+}*/
+
+//SALIR DE LA SESION
+const desloguear = document.getElementById(`desloguear`);
+desloguear.addEventListener("click", () => {
+    localStorage.setItem('LOGIN', 'NO');
+    location.href = "../pages/iniciarsesion.html";
+})
+
+
+
+
+
 // SERVICIOS
 const servicios = [
      // CEJAS Y PESTAÑAS
@@ -241,7 +256,31 @@ let botonesAgregar = document.querySelectorAll(".servicio__agregar");
 let botonAgregar = document.querySelectorAll(".favoritos1");
 const numerito = document.querySelector("#numerito");
 
+// FETCH a catalogo.json
 
+fetch('./catalogo.json')
+    .then((response) => response.json())
+    .then((data) => console.log(data));
+
+
+
+
+/*let ul = document.getElementById("contenedor-servicios");
+async function perdirPosts() {
+    const response = await fetch('./catalogo.json');
+    const data = await response.json();
+    data.results.forEach ((element) => {
+        let li = document.createElement ('li');
+        li.innerText = element.titulo;
+        ul.append (li);
+        
+    })
+}
+perdirPosts(); */
+
+
+
+// Mostrar los servicios
 function cargarServicios (serviciosElegidos){
     contenedorServicios.innerHTML = "";
 
@@ -257,13 +296,25 @@ function cargarServicios (serviciosElegidos){
                     <div class="card-body servicios__detalles">
                         <h4 class="d-lg-block d-md-block d-sm-none d-none card-title servicio">${servicio.titulo}</h4>
                         <p class="d-lg-block d-md-block d-sm-none d-none card-text servicio__precio">$ ${servicio.precio} <button id=${servicio.id} class="corazon"><i class="favoritos1 bi bi-heart"></i></button>
-                        <button class="servicio__agregar" id="${servicio.id}">Agregar</button>
+                        <button class="servicio__agregar" id="boton${servicio.id}">Agregar</button>
                     </div> 
         </div>              
         `;
-
-        
         contenedorServicios.append(section);
+
+        // Toastify
+        const boton = document.getElementById(`boton${servicio.id}`);
+        boton.addEventListener("click", () => {
+        Toastify({
+            text: `${servicio.titulo} agregado al carrito!🛒🔥`,
+            duration: 3000,
+            gravity: "bottom",
+            position: "right"
+        }).showToast();
+        
+    })
+    
+    
     })
 
     actualizarBotonesAgregar();
@@ -310,12 +361,13 @@ if (serviciosEnCarritoLS) {
 }
 
 function agregarAlCarrito (e) {
-
     const idBoton = e.currentTarget.id;
-    const servicioAgregado = servicios.find(servicio => servicio.id === idBoton);
+    const servicioAgregado = servicios.find(servicio => `boton${servicio.id}` === idBoton);
 
-    if(serviciosEnCarrito.some(servicio => servicio.id === idBoton)){
-      const index =  serviciosEnCarrito.findIndex(servicio => servicio.id === idBoton);
+
+
+    if(serviciosEnCarrito.some(servicio => `boton${servicio.id}` === idBoton)){
+      const index =  serviciosEnCarrito.findIndex(servicio => `boton${servicio.id}` === idBoton);
       serviciosEnCarrito[index].cantidad++;
 
     } else{
@@ -333,39 +385,4 @@ function actualizarNumerito (){
 }
 
 
-
-
-
-
-// Función de favoritos 
-
-function actualizarFavoritos () {
-    botonAgregar= document.querySelectorAll(".favoritos1");
-
-    botonAgregar.forEach(boton => {
-        boton.addEventListener("click", agregarAfavoritos);
-
-    });
-}
-
-/*
-const serviciosEnFavoritos = [];
-
-function agregarAfavoritos (e) {
-    const idBoton = e.currentTarget.id;
-    const servicioAgregado = servicios.find (servicio => servicio.id === idBoton);
-   
-
- if(serviciosEnFavoritos.some(servicio => servicio.id  === idBoton)){
-    const index= serviciosEnFavoritos.findIndex(servicio => servicio.id === idBoton);
-    serviciosEnFavoritos[index].cantidad;
-    } else{
-        servicioAgregado.cantidad = 1;
-        serviciosEnFavoritos.push(servicioAgregado);
-    }
-
-}        
-
-
-*/
 
