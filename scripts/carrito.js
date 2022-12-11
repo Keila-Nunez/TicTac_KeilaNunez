@@ -1,3 +1,10 @@
+//SALIR DE LA SESION
+const desloguear = document.getElementById(`desloguear`);
+desloguear.addEventListener("click", () => {
+    localStorage.setItem('LOGIN', 'NO');
+    location.href = "../pages/iniciarsesion.html";
+})
+
 let serviciosEnCarrito = localStorage.getItem("servicios-en-carrito");
 serviciosEnCarrito = JSON.parse(serviciosEnCarrito);
 

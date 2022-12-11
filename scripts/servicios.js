@@ -1,16 +1,9 @@
-/*if(localStorage.getItem('LOGIN') == null || localStorage.getItem('LOGIN') == 'NO'){ 
-    location.href = "../pages/iniciarsesion.html";
-}*/
-
 //SALIR DE LA SESION
-const desloguear = document.getElementById(`desloguear`);
+desloguear = document.getElementById(`desloguear`);
 desloguear.addEventListener("click", () => {
     localStorage.setItem('LOGIN', 'NO');
     location.href = "../pages/iniciarsesion.html";
 })
-
-
-
 
 
 // SERVICIOS
@@ -264,22 +257,6 @@ fetch('./catalogo.json')
 
 
 
-
-/*let ul = document.getElementById("contenedor-servicios");
-async function perdirPosts() {
-    const response = await fetch('./catalogo.json');
-    const data = await response.json();
-    data.results.forEach ((element) => {
-        let li = document.createElement ('li');
-        li.innerText = element.titulo;
-        ul.append (li);
-        
-    })
-}
-perdirPosts(); */
-
-
-
 // Mostrar los servicios
 function cargarServicios (serviciosElegidos){
     contenedorServicios.innerHTML = "";
@@ -350,7 +327,7 @@ function actualizarBotonesAgregar () {
     });
 }
 
-let serviciosEnCarrito;
+
 
 let serviciosEnCarritoLS = localStorage.getItem("servicios-en-carrito");
 if (serviciosEnCarritoLS) {
